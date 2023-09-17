@@ -1,0 +1,90 @@
+html * {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+body {
+    width: auto;
+}
+header {
+    background-color: rgb(15, 152, 190);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    }
+
+h1 {
+    font-size: 30px;
+    color: white;
+    padding-left: 20px;
+}
+  
+main {
+    max-width: 900px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    } 
+
+nav {
+    list-style-type: none;
+    background-color: #1c1b1b;
+    }      
+    
+nav a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    }
+              
+nav a:hover {
+    background-color: rgba(134, 129, 129, 0.2);
+    }
+              
+nav .active {
+    background-color: rgba(3, 9, 23, 0.4)
+    }
+          
+h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333; /* Replace with your text color */
+    }        
+
+.card {
+    grid-area: auto;
+    background-color: #efebeb; 
+    border: 1px solid #1c1b1b; 
+    margin-bottom: 10px;
+    }
+
+.card h3 {
+    background-color: rgb(15, 152, 190); 
+    border-bottom: 1px solid #1c1b1b; 
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1c1b1b; 
+    margin: auto;
+    }
+  
+ul {
+    list-style-type: none;
+    text-align:left;
+    }
+  
+li a {
+    color: #1c1b1b;
+    text-align:left;
+    }
+  
+footer {
+    text-align: center;
+    background-color: #1c1b1b;
+    color: #fff; 
+    padding: 10px;
+    }
+  
+#lastModified {
+font-size: 12px;
+    }
