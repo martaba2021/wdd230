@@ -59,6 +59,19 @@ h2 {
     margin-bottom: 10px;
     }
 
+    .card a:hover {
+        color: #5a52c5;
+    }
+    
+    .card a:visited {
+        color: #67639e;
+        text-decoration: none;
+    }
+    
+    .card a:visited:hover {
+        color: #1d1950;
+    }
+
 .card h3 {
     background-color: rgb(15, 152, 190); 
     border-bottom: 1px solid #1c1b1b; 
