@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15%;
+}
+
+header {
+    background-color:#05426b;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    padding: 1rem;
+}
+main {
+    display: grid;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+  
+section {
+    background-color: #e4e8eb;
+    margin: auto;
+    max-width: 500px;
+    height: 620px;
+    box-sizing: border-box;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 3px #322d2d;
+    padding: 10px;
+} 
+
+.visual img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+.rules img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.white img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+footer {
+    margin-top: 1rem;
+    background-color: #05426b;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+  
