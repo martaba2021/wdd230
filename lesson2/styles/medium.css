@@ -8,8 +8,6 @@ main {
     display: flex;
     justify-content: space-between;
 }
-
-  
 section:nth-child(3) {
     grid-column: span 2;
     max-width: none;

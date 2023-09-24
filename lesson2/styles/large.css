@@ -5,10 +5,8 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 /* or repeat(3, 1fr)*/
 }
-
 .main {
     display: flex;
     justify-content: space-between;
 }
-
 }

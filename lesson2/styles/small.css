@@ -1,16 +1,12 @@
-@media (max-width: 767px) {
-    main {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
-    .main {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .card {
-      grid-row: auto; /* Reset grid positioning */
-      grid-column: auto; /* Reset grid positioning */
-      height: auto;
-    }
-  
-  }
+@media (max-width: 600px) {
+main {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+}
