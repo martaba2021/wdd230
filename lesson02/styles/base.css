@@ -37,6 +37,13 @@ main section {
     margin: 0.5rem;
     text-align: center;
 }
+nav h3:hover {
+    background-color: rgba(134, 129, 129, 0.2);
+    }
+              
+nav .h3 {
+    background-color: rgba(3, 9, 23, 0.4)
+    }
 
 .visual img {
     max-width: 100%;

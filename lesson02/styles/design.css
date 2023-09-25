@@ -33,6 +33,10 @@ h2 {
 h3 {
     margin-left: 1.5rem;
  }
+nav a:hover {
+    background-color: rgba(134, 129, 129, 0.2);
+}
+
 article p {
 	text-align: justify;
 }
