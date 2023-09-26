@@ -55,21 +55,17 @@ h2 {
 .card {
     grid-area: auto;
     background-color: #efebeb; 
-    border: 1px solid #1c1b1b; 
+    border: 1px solid black; 
     margin-bottom: 10px;
+    font-style: inherit;
     }
 
     .card a:hover {
-        color: #5a52c5;
-    }
-    
-    .card a:visited {
-        color: #67639e;
-        text-decoration: none;
+        color: #d5d2e9;
     }
     
     .card a:visited:hover {
-        color: #1d1950;
+        color: #0b07f3;
     }
 
 .card h3 {
@@ -84,10 +80,14 @@ h2 {
 ul {
     list-style-type: none;
     text-align:left;
+    color: #1c1b1b;
     }
+ul a{
+    color: #1c1b1b;
+}
   
 li a {
-    color: #1c1b1b;
+    color: black;
     text-align:left;
     }
   
