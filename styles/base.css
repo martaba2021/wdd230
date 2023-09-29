@@ -23,6 +23,7 @@ main {
     text-align: center;
     padding: 10px;
     margin: 0 auto;
+
     } 
 
 nav {
@@ -41,6 +42,11 @@ nav a {
 nav a:hover {
     background-color: rgba(134, 129, 129, 0.2);
     }
+
+/*show emoji in nav menu. Emoji applied using copy and paste */    
+nav a:hover::before {
+    content:  "👉";
+}
               
 nav .active {
     background-color: rgba(3, 9, 23, 0.4)
@@ -99,5 +105,44 @@ footer {
     }
   
 #lastModified {
-font-size: 12px;
+    font-size: 12px;
     }
+/*lesson3 - small view navigation*/
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#menu::before {
+	content: "☰";
+    cursor:pointer;
+}
+
+#menu.open::before {
+	content: "⨉";
+    cursor:pointer;   
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+}
+
+.open a {
+    display: block;
+    width: 100%;
+}
