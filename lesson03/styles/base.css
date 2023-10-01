@@ -33,7 +33,6 @@ background-color: white;
 padding: 1em;
 align-items: center;
 align-content: center;
-
 }
 img {
 max-width: 100%;
@@ -55,7 +54,12 @@ background-color: var(--paragraph-background-color);
 header > h1, header > h2 {
 color: var(--headline-color-on-color);
 }
-
+a {
+color: blue;
+}
+a:visited {
+color: purple;
+}
 p {
 font-family: var(--body-font);
 color: var(--paragraph-color);
@@ -84,15 +88,19 @@ color:white
 }
 .secondary {
 background-color: var(--secondary-color);
+color:white;
 }
 .accent1 {
 background-color: var(--accent1-color);
 }
 .accent2{
 background-color: var(--accent2-color);
+color:white;
 }
 .accent3{
 background-color: var(--accent3-color);
+color: white;
+
 }
 
 p.colored {
@@ -110,10 +118,12 @@ nav > ul {
 list-style-type: none;
 display: flex;
 
+
 }
 nav a {
 padding:1em;
 min-width: 70px;
+text-decoration: none;
 }
 nav a:link, nav a:visited {
 color: var(--nav-link-color);
@@ -122,7 +132,9 @@ nav a:hover {
 color: var(--nav-hover-link-color);
 background-color: var(--nav-hover-background-color);
 }
-
+nav a:hover::before {
+  content:  "👉";
+}
 .sitemap {
 display: grid;
 justify-content: center;
@@ -141,17 +153,17 @@ text-align: center;
 }
 .sm-home {
 grid-area: home;
-background-color: #999;
+background-color: lightgray;
 line-height: 3em;
 }
 .sm-page2 {
 grid-area: page2;
-background-color: #999;
+background-color: lightgrey;
 line-height: 3em;
 }
 .sm-page3 {
 grid-area: page3;
-background-color: #999;
+background-color: lightgrey;
 line-height: 3em;
 }
 
