@@ -84,23 +84,19 @@ height: 3em;
 
 .primary {
 background-color: var(--primary-color);
-color:white
+
 }
 .secondary {
 background-color: var(--secondary-color);
-color:white;
 }
 .accent1 {
 background-color: var(--accent1-color);
 }
 .accent2{
 background-color: var(--accent2-color);
-color:white;
 }
 .accent3{
 background-color: var(--accent3-color);
-color: white;
-
 }
 
 p.colored {
