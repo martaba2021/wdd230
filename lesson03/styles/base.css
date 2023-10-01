@@ -113,13 +113,17 @@ font-size: 1.2em;
 nav > ul {
 list-style-type: none;
 display: flex;
-
-
 }
 nav a {
 padding:1em;
 min-width: 70px;
 text-decoration: none;
+}
+a.active {
+background-color: #26532b;
+}
+.active::before {
+content: "📍 ";
 }
 nav a:link, nav a:visited {
 color: var(--nav-link-color);
