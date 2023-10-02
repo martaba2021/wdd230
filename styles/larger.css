@@ -1,4 +1,4 @@
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
 nav {
     display: flex;
     flex-direction: row;
@@ -21,8 +21,7 @@ main h2 {
 .navigation {
     flex-direction: row;
 }
-
-.navigation li {
+.navigation a {
     display: block;
     flex: 1 1 100%;
 }
