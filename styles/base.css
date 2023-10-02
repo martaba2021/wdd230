@@ -37,6 +37,7 @@ nav a {
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    min-width: 50%;
     }
               
 nav a:hover {
@@ -135,13 +136,8 @@ footer {
 	flex-direction: column;
 	list-style: none;
 	background-color: #333;
-	color: #fff;
+	color: #fff;  
 }
-
-.navigation a {
-	display: none;
-}
-
 .open a {
     display: block;
     width: 100%;
