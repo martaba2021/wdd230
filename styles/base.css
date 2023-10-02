@@ -146,3 +146,12 @@ footer {
     display: block;
     width: 100%;
 }
+.map {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.map iframe {
+    width: 70%;
+    margin: 0 auto;
+}
