@@ -13,8 +13,7 @@ header {
     padding: 10px;
     flex-wrap: wrap; /* ?? double check*/
     flex-direction: row; /* ?? double check*/
-    }
-
+ }
 h1 {
     font-size: 30px;
     color: #00030a;
