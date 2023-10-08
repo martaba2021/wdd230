@@ -24,7 +24,7 @@
 }
 
 html {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
 }
 
 
@@ -36,13 +36,13 @@ body {
 }
 footer {
     text-align: center;
-    background-color: var(--nav-hover-background-color);
-    color: var(--accent1-color); 
+    background-color: var(--accent2-color);
+    color: white; 
     padding: 10px;
     }
   
 #lastModified {
-    font-size: 12px;
+    font-size: 14px;
     }
 /* small view navigation*/
 
