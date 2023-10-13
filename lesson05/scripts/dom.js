@@ -10,7 +10,6 @@ button.addEventListener('click', () => {
         const deleteButton = document.createElement('button');
         deleteButton.textContent = '❌';
         li.append(deleteButton);
-
         deleteButton.addEventListener('click', function () {
             list.removeChild(li);
             input.focus()
