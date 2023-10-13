@@ -10,15 +10,16 @@ button.addEventListener('click', () => {
         const deleteButton = document.createElement('button');
         deleteButton.textContent = '❌';
         li.append(deleteButton);
-        deleteButton.addEventListener('click', fuction () {
+
+        deleteButton.addEventListener('click', function () {
             list.removeChild(li);
             input.focus()
         });
         input.focus();
-        input.value = ""
+        input.value = '';
     }
     else {
-        alert('Please enter a favorite chapter from BOM')
+        alert('Opps! No empty values allowed. Please enter a favorite chapter from BOM')
         input.focus(); 
     }
 });
