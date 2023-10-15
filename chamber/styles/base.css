@@ -1,60 +1,58 @@
-:root {
-  
+:root {  
 --primary-color: #000080;
 --secondary-color: #3083DC;
 --accent1-color: #FFFFFF;
 --accent2-color: #26532b;
 --accent3-color: #399E5A;
 
-
---heading-font: "Roboto";
---body-font: "Open Sans";
---special-font:"Young Serif";
-
-
---headline-color-on-white: black;  /* headlines on a white background */ 
---headline-color-on-color: white; /* headlines on a colored background */ 
---paragraph-color-on-white: black; /* paragraph text on a white background */ 
---paragraph-color-on-color: white; /* paragraph text on a colored background */ 
---paragraph-background-color: black;
---nav-link-color: #FFFFFF;
---nav-background-color: #000080;
---nav-hover-link-color: black;
---nav-hover-background-color:#3083DC;
-}
-
-html {
-    background-color: var(--accent2-color);
-    display: block;
-}
-header {
-    display: block;
+--font1: "Roboto";
+--font2: "Open Sans";
+--font3:"Young Serif"; /*Have not use it yet*/
 }
 body {
-    background-color: var(--accent1-color);
-    align-items: center;
-    align-content: center;
-    margin: 0 auto;
+  display: block;
+  font: var(--font1);
+  color: var(--primary-color);
+  text-align: center;
+}
+header {
+  display: block;
+  margin: -30px;
+  padding: 20px;
+}
+h1 h2 h3 h4 h5 h6{
+  font: var(--font2);
+}
+nav {
+  padding: -10px;
+}
+nav a{
+  padding: 10px;
+}
+img {
+  display: block;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--primary-color)
 }
 footer {
-    text-align: center;
-    background-color: var(--accent2-color);
-    color: white; 
-    padding: 10px;
-    }
-  
+  font: var(--font1);
+  text-align: center;
+  padding: 10px;
+}
 #lastModified {
-    font-size: 14px;
-    }
-
-    
+  font-size: 14px;
+}
+ 
 /* small view navigation*/
 #menu {
 	font-size: 1.5rem;
-    border-radius: 2px;
+  border-radius: 10px;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #eee;
+	background-color: #ccc;
 	color: #000;
  	position: absolute;
 	top: 40px;
@@ -70,12 +68,10 @@ footer {
 	content: "⨉";
     cursor:pointer;   
 }
-
 .navigation {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: var(--nav-hover-background-color);
 	color: #fff;
 }
 .navigation a {
@@ -93,58 +89,54 @@ footer {
     height: 20px;
     position: absolute;
     top: 10px;
-    right: 10px;
-    
-  }
-  
-  .switch input { 
+    right: 10px;   
+  } 
+.switch input { 
     opacity: 0;
     width: 0;
     height: 0;
   }
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    left: 4px;
-    bottom: 2.5px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border: 1px solid rgba(0,0,0,.3);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 2.5px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-  }
-  
+  box-shadow: 0 0 1px black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
 /* Rounded sliders */
 .slider.round {
-    border-radius: 30px;
-  }
-  
-  .slider.round:before {
-    border-radius: 45%;
-  }
-  
+  border-radius: 30px;
+} 
+.slider.round:before {
+  border-radius: 45%;
+}
