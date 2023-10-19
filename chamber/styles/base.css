@@ -1,18 +1,17 @@
 :root {  
---primary-color: #000080;
+/*--primary-color: #000080;
 --secondary-color: #3083DC;
 --accent1-color: #FFFFFF;
 --accent2-color: #26532b;
---accent3-color: #399E5A;
+--accent3-color: #399E5A;*/
 
 --font1: "Roboto";
 --font2: "Open Sans";
---font3:"Young Serif"; /*Have not use it yet*/
+--font3:"Young Serif"; Have not use it yet
 }
 body {
   display: block;
   font: var(--font1);
-  color: var(--primary-color);
   text-align: center;
 }
 header {
@@ -35,7 +34,6 @@ img {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  color: var(--primary-color)
 }
 footer {
   font: var(--font1);

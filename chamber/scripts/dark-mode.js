@@ -1,10 +1,17 @@
+// Select the button
 const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
-const events = document.querySelector("#events");
-const weather = document.querySelector('#weather');
-const spotlight = document.querySelector('#sponsors');
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
 
-modeButton.addEventListener("click", () => {
-    if (document.body.classList.toggle('dark')){
-    else (document.body.classList.toggle(''));
+// Listen for a click on the button
+modeButton.addEventListener("click", function() {
+  // If the current URL contains "ligh-theme.css"
+  if (theme.getAttribute("href") == "light-theme.css") {
+    // ... then switch it to "dark-theme.css"
+    theme.href = "dark-theme.css";
+  // Otherwise...
+  } else {
+    // ... switch it to "light-theme.css"
+    theme.href = "light-theme.css";
+  }
 });

@@ -1,0 +1,13 @@
+
+body {
+    color:  #000080;
+}
+nav {
+    padding: -10px;
+}
+nav a {
+    background-color: var(--primary-color);
+}
+main {
+    color: var(--primary-color);    
+}
