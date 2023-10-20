@@ -11,10 +11,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    flex-wrap: wrap; /* ?? double check*/
-    flex-direction: row; /* ?? double check*/
 }
-img {
+header > img {
     max-width: 10%;
     max-height: 15%;
     border-radius: 3px;
@@ -26,14 +24,13 @@ h1 {
     color: #00030a;
     padding-left: 5px;
 }
-  
 main {
+    display: grid;
     max-width: 1000px;
     text-align: center;
     padding: 5px;
     margin: 5px auto;
 }
-
 nav {
     list-style-type: none;
     background-color: #1c1b1b;
@@ -64,7 +61,6 @@ h2 {
     color: #333; /* Replace with your text color */
     padding: 0;
 }        
-
 .card {
     background-color: #efebeb; 
     border: 1px solid black; 
@@ -104,6 +100,7 @@ li a {
     }
   
 footer {
+    grid-column: 1/3;
     text-align: center;
     background-color: #1c1b1b;
     color: #fff; 
@@ -154,9 +151,42 @@ footer {
 .map {
     width: 100%;
     display: flex;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 .map iframe {
     width: 70%;
+    height: 100%;
     margin: 0 auto;
 }
+/* Week 06 */
+
+.hero {
+	position: relative;
+    grid-column: 1/3 ;
+}
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.hero-label {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#f6f9f8, #6dd2f3f5);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+    font-weight: bolder;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+}
+

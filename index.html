@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="lesson01/images/me.png" alt="personal pic">
+        <img src="lesson01/images/me.webp" alt="personal pic">
         <h1>Marta Rodriguez</h1>
     </header>
     <nav>
@@ -34,6 +34,16 @@
             </div>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="San Salvador, El Salvador Temple Image" width="1500" height="750">
+            </picture>
+            <div class="hero-label">
+                <p>San Salvador, El Salvador Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -52,7 +62,7 @@
             <h3>Information</h3>
             <div id="placeholder"></div>
         </section>
-        </main>
+    </main>
     <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61945.203048340496!2d-89.60402157571458!3d13.983873116446368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e8a88f74c611%3A0x334dedcda18267cd!2sSanta%20Ana%2C%20El%20Salvador!5e0!3m2!1sen!2sus!4v1695958226612!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
     </div>
