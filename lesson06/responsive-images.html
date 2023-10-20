@@ -6,16 +6,18 @@
     <title>Marta Rodriguez - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="WDD 230 - Web Frontend Development - Marta Rodriguez - Responsive Images: srcset">
     <meta name="author" content="Marta Rodriguez">
+    <title>Responsive Images</title>
+    <link type="text/css" rel="stylesheet" href="styles/responsive-images.css" />
 </head>
 <body>
     <main>
         <div class="hero">
             <picture>
-                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 500px)" srcset="/images/hero-small.webp">
                 <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="San Salvador, El Salvador Temple Image" width="1500" height="750">
             </picture>
         </div>
-    </main>
-    
+    </main> 
 </body>
 </html>
