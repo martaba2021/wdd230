@@ -1,24 +1,32 @@
-/* dark-theme.css */
-:root {
-    --primary-color: black;
-    --secondary-color: white;
-    --accent1-color: gray;
+
+:root {  
+    /* Dark Mode*/
+    --dark-primary-color: #000;
+    --dark-secondary-color: white;
+    --dark-accent1-color: #3f3b3b;
 }
 
-body.dark-theme {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-nav {
-    color: var(--accent1-color); /* Navigation text color in the dark theme */
-}
-
-.navigation {
-    color: #fff; /* Background color for the navigation menu in the dark theme */
-}
-
-.navigation a {
-    color: white; /* Link color in the dark theme */
-    background-color: rgb(73, 71, 71); /* Background color for navigation links in the dark theme */
-}
+/* Dark Mode */
+body.theme-dark {
+    --primary-color: var(--dark-primary-color);
+    --secondary-color: var(--dark-secondary-color);
+    --accent1-color: var(--dark-accent1-color);
+    background-color: var(--dark-primary-color);
+    color: var(--dark-secondary-color);
+    font-weight: 1000;
+  }
+  body.theme-dark p{
+    color: var(--dark-primary-color);
+  }
+  body.theme-dark main {
+    color: var(--dark-secondary-color);
+    background-color: var(--dark-accent1-color);
+    font-weight: bolder;
+    font-size: larger;
+  }
+  body.theme-dark footer p {
+    color: var(--dark-secondary-color);
+    background-color: var(--dark-primary-color);
+    font-weight: bolder;
+    font-size: larger;
+  }
