@@ -1,12 +1,24 @@
+/* dark-theme.css */
 :root {
     --primary-color: black;
     --secondary-color: white;
-    --accent1-color: gray;   
+    --accent1-color: gray;
 }
-body.dark {
+
+body.dark-theme {
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-nav  {
-    color: var(--accent1-color);
+
+nav {
+    color: var(--accent1-color); /* Navigation text color in the dark theme */
+}
+
+.navigation {
+    color: #fff; /* Background color for the navigation menu in the dark theme */
+}
+
+.navigation a {
+    color: white; /* Link color in the dark theme */
+    background-color: rgb(73, 71, 71); /* Background color for navigation links in the dark theme */
 }

@@ -1,44 +1,80 @@
 :root {  
-/*--primary-color: #000080;
+--primary-color: #000080;
 --secondary-color: #3083DC;
 --accent1-color: #FFFFFF;
 --accent2-color: #26532b;
---accent3-color: #399E5A;*/
+--accent3-color: #399E5A;
 
 --font1: "Roboto";
 --font2: "Open Sans";
---font3:"Young Serif"; Have not use it yet
+--font3: "Young Serif"; 
 }
 body {
-  display: block;
+  /* display: block; */
   font: var(--font1);
   text-align: center;
+  margin: 0;   /* inspect */
+  padding: 0;   /* inspect */
 }
 header {
-  display: block;
-  margin: -30px;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  /*margin: -30px;*/
+  /*padding: 20px;*/
+  /*width: 100%;*/
+  /*background-color: var(--primary-color);  inspect */
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  /*align-items: left;*/
+}
+.website-name {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 2% 0;
+  color: white;
+  font-size: 2rem;
+  /*padding-top: 15%;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;*/
+}
+/*h1{
+  color: white;
 }
 h1 h2 h3 h4 h5 h6{
   font: var(--font2);
-}
+}*/
 nav {
-  padding: -10px;
+  /*padding: -10px;*/
+  padding: 10px;
 }
 nav a{
   padding: 10px;
+  color: white; /* inspect */
+  background-color: var(--primary-color); /* inspect */
 }
-img {
+/*.hero img {
   display: block;
-}
+}*/
 main {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 10px; /* inspect */
+  padding: 10px; /* inspect */
+
 }
 footer {
-  font: var(--font1);
   text-align: center;
   padding: 10px;
+  font: var(--font1);
+  background-color: var(--primary-color);
+  color: white;
 }
 #lastModified {
   font-size: 14px;
@@ -55,16 +91,17 @@ footer {
  	position: absolute;
 	top: 40px;
 	right: 14px;
+  cursor: pointer; /*inspect*/
 }
 
 #menu::before {
 	content: "☰";
-    cursor:pointer;
+  /*cursor:pointer;*/
 }
 
 #menu.open::before {
 	content: "⨉";
-    cursor:pointer;   
+ /* cursor:pointer;*/
 }
 .navigation {
 	display: flex;
@@ -73,27 +110,27 @@ footer {
 	color: #fff;
 }
 .navigation a {
-    display: none;
+  display: none;
 }
 .open a {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
+  color: white;
 }
 /*toggle*/
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 45px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;   
-  } 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+} 
 .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 .slider {
   position: absolute;
   cursor: pointer;
@@ -108,8 +145,8 @@ footer {
 }
 
 .slider:before {
-  position: absolute;
   content: "";
+  position: absolute;
   height: 15px;
   width: 15px;
   left: 4px;
@@ -120,7 +157,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: black;
+  background-color: gray;
 }
 input:focus + .slider {
   box-shadow: 0 0 1px black;
@@ -136,5 +173,35 @@ input:checked + .slider:before {
   border-radius: 30px;
 } 
 .slider.round:before {
-  border-radius: 45%;
+  border-radius: 50%;
+}
+/*Hero Image*/
+.hero {
+	position: relative;
+  grid-column: 1/3;
+}
+.hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.hero-label {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	background: radial-gradient(#f6f9f8, #b1b6b7f5);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 2px;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+  font: var(--font3);
+  font-size: 30px;
+  padding: .25rem;
+  font-weight: 700;
+  font-size: 2rem;
+	/* Buenas */
+}
+
+.hero-label p {
+  margin: 0;
 }
