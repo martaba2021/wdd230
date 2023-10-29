@@ -32,6 +32,12 @@
         display: block;
         flex: 1 1 100%;
     }
+    .photo1:hover {box-shadow: 0 0 50px #333;}
+    .photo2:hover {box-shadow: 0 0 50px #333;}
+    .photo3:hover {box-shadow: 0 0 50px #333;}
+    .photo4:hover {box-shadow: 0 0 50px #333;}
+    .photo5:hover {box-shadow: 0 0 50px #333;}
+    .photo6:hover {box-shadow: 0 0 50px #333;}
     }
     
       
