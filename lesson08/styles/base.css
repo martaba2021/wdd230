@@ -34,14 +34,11 @@ caption {
     font-weight: bold;
 }
 
-tr:first-child th {
-	background-color: var(--back);
-	color: var(--forelight);
-}
+
 
 th, td {
 	padding: 7px 15px;
-	border: 1px solid var(--borderlight);
+	border: 2px solid var(--borderlight);
 }
 
 th {
@@ -55,10 +52,16 @@ td {
     font-weight: bold;
 }
 
-tbody tr:nth-child(even) {
+tr:first-child th {
+	background-color: var(--back);
+	color: var(--forelight);
+}
+
+tr:nth-child(even) {
 	background-color: var(--zebra);
 }
 
 .blank {
     background-color: var(--foredark)
 }
+
