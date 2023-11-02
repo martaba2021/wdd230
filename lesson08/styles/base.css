@@ -1,67 +1,77 @@
-:root {
-	--back: rgb(0, 9, 5);
-    --back2: hsla(143, 87%, 3%, 0.683);
-    --foredark: hsla(0,0%,10%,1);
-	--forelight: hsla(0,0%,100%,1);
-	--border: hsla(0,0%,20%,.8);
-	--borderlight: hsla(0,0%,33%,.3);
-	--shadow: hsl(0,0%,50%);
-	--zebra: hsl(0, 0%, 93%, 1);
-}
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
 body {
-	font-family: "EB Garamond", Arial, serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 1.5rem;
-}
-
-table {
-	margin: 10px auto;
-	border: thin solid var(--border);
-	box-shadow: 0 0 10px var(--shadow);
-	border-collapse: collapse;
-}
-
-caption {
-  padding: 10px;
-  caption-side: bottom;
-	color: var(--back);
-	font-size: .99rem;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
 }
 
 
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
 
-th, td {
-	padding: 7px 15px;
-	border: 2px solid var(--borderlight);
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
 }
 
-th {
-	background-color: var(--back2);
-	font-size: larger;
-    color: var(--forelight)
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
 }
 
-td {
-	text-align: center;
-    font-weight: bold;
-}
 
-tr:first-child th {
-	background-color: var(--back);
-	color: var(--forelight);
-}
 
-tr:nth-child(even) {
-	background-color: var(--zebra);
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-
-.blank {
-    background-color: var(--foredark)
-}
-
