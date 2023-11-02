@@ -34,7 +34,7 @@ caption {
     font-weight: bold;
 }
 
-tr:first-child th, .highlight {
+tr:first-child th {
 	background-color: var(--back);
 	color: var(--forelight);
 }
@@ -55,6 +55,10 @@ td {
     font-weight: bold;
 }
 
-tbody tr:nth-child(odd) {
+tbody tr:nth-child(even) {
 	background-color: var(--zebra);
+}
+
+.blank {
+    background-color: var(--foredark)
 }
