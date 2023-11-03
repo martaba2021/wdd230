@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marta Rodriguez - WDD 230 - Form Build</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development - Marta Rodriguez - Course Assignment Portal.">
+    <meta name="description" content="WDD 230 - Form Build">
     <meta name="author" content="Marta Rodriguez">
     <meta property="og:title" content="WDD230 - Homework">
     <meta property="og:type" content="Website">
@@ -38,9 +38,9 @@
             <form method="get" action="record.html">
                 <fieldset>
                     <label class="top"> Username* <input type="text" id="username" name="username" required></label>
-                    <label class="top"> Password* <input type="text" id="password"name="password" pattern="[A-Za-z]{8}" required></label>
-                    <label class="top"> Password Confirmation* <input type="text" id="password-confirmation" name="password-confirmation" required></label>
-                    <label class="top"> Email* <input type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+                    <label class="top"> Password* <input type="password" id="password"name="password" pattern="[A-Za-z]{8}" required></label>
+                    <label class="top"> Password Confirmation* <input type="password" id="password-confirmation" name="password-confirmation" required></label>
+                    <label class="top"> Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
                     <label class="top"> Page Rating <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues" required>
                         <datalist id="rangevalues">
                             <option value="1">1</option>
