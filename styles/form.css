@@ -1,4 +1,9 @@
 /*-------------FORM-------------------*/
+:root {
+    --color1: #9c2c13;
+    --color2: rgba(0,0,0,0.1);
+    --color3: #181312;
+}
 form fieldset {
     margin: 2rem 0;
     border: 2px solid #0e0f12;
@@ -8,7 +13,7 @@ form fieldset {
 label.top {
     display: block;
     padding-top: 1rem;
-    color: #9c2c13;
+    color: var(--color1);
     font-size: 1rem;
 }
 .top input {
@@ -20,11 +25,11 @@ label.top {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0,0,0,0.1);
+    background-color: var(--color2);
 }
 input.submitBtn {
     border: none;
-    background-color: #181312;
+    background-color: var(--color3);
     color: white;
     font-size: 1rem;
     font-weight: bold;
