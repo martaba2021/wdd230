@@ -51,8 +51,30 @@
             </div>    
     </nav>
     <main>
-        <formmethod="get" action="thankyou.html">
-            
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label class="top">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top">Title or Position <input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" 
+                    title="Please enter at least seven characters with only alphabets, hyphens, and spaces."></label>
+                <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@mail.com" required></label>
+                <label class="top">Mobile Phone Number* <input type="telephone" id="telephone" name="telephone" placeholder="1112345678"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Selection</legend>
+                    <label class="membership"><input type="radio" value="np-membership" name="membership"> NP Membership is for nonprofit organizations and there is not fee</label>
+                    <label class="membership"><input type="radio" value="b-membership" name="membership"> Bronze Membership</label>
+                    <label class="membership"><input type="radio" value="s-membership" name="membership"> Silver Membership</label>
+                    <label class="membership"><input type="radio" value="g-membership" name="membership"> Gold Membership</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="top">Business/Organization's Description <textarea id="description" name="description" rows="8" cols="30"></textarea></label>
+                    <label class="top"><input type="hidden" id="timestamp" value="timestamp"></label>
+                    <label 
+                </fieldset>
+                <input type="submit" value="Complete Application" class="submitBtn">
         </form>
         </main>
     <footer>
