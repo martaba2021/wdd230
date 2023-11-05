@@ -258,7 +258,7 @@ label.top input:required:valid {
 table {
   grid-column: 2/3;
   grid-row: 1/2;
-	margin: 10px;
+  margin: 2.5rem 0;  
   border: 2px solid #ccc;
   box-shadow: 0 0 5px var(--secondary-color);
 	border-collapse: collapse;
