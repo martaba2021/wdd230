@@ -4,6 +4,7 @@
 --accent1-color: #FFFFFF;
 --accent2-color: #26532b;
 --accent3-color: #399E5A;
+--accent4-color: rgba(0,0,0,0.1);
 
 --font1: "Roboto", sans-serif;
 --font2: "Open Sans", sans-serif;
@@ -211,4 +212,51 @@ input:checked + .slider:before {
   .sidebar {
     order: 2; /* Place sidebar after the main content in mobile view. */
   }
+}
+/*-------------FORM-------------------*/
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid #0e0f12;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  text-align: left;
+}
+label.top {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+.top input, textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: var(--accent4-color);
+}
+form label.membership {
+  display: block;
+  padding: .75rem 0;
+  color: #555;
+}
+input.submitBtn {
+  border: none;
+  background-color: var(--accent2-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+label.top input:required {
+  border-left: red solid 6px;
+}
+label.top input:required:valid {
+  border-left: #26532b solid 6px;
 }
