@@ -45,7 +45,8 @@
                 <a href="https://martaba2021.github.io/wdd230/">Home</a>
                 <a href="https://martaba2021.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a>
                 <a href="https://martaba2021.github.io/wdd230/chamber/discover.html">Discover</a>
-                <a href="https://martaba2021.github.io/wdd230/chamber/" class="active">Chamber</a>
+                <a href="https://martaba2021.github.io/wdd230/chamber/">Chamber</a>
+                <a href="https://martaba2021.github.io/wdd230/chamber/join.html" class="active">Join</a>
                 <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
                 <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-cor/13?lang=eng#p8" target="_blank">Scripture</a>
             </div>    
@@ -59,11 +60,11 @@
                 <label class="top">Title or Position <input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" 
                     title="Please enter at least seven characters with only alphabets, hyphens, and spaces."></label>
                 <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@mail.com" required></label>
-                <label class="top">Mobile Phone Number* <input type="telephone" id="telephone" name="telephone" placeholder="1112345678"></label>
+                <label class="top">Mobile Phone Number* <input type="telephone" id="telephone" name="telephone" placeholder="1112345678" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership Selection</legend>
-                    <label class="membership"><input type="radio" value="np-membership" name="membership"> NP Membership is for nonprofit organizations and there is not fee</label>
+                    <label class="membership"><input type="radio" value="np-membership" name="membership"> Non-Profit Membership (Proof Required)</label>
                     <label class="membership"><input type="radio" value="b-membership" name="membership"> Bronze Membership</label>
                     <label class="membership"><input type="radio" value="s-membership" name="membership"> Silver Membership</label>
                     <label class="membership"><input type="radio" value="g-membership" name="membership"> Gold Membership</label>
@@ -76,6 +77,58 @@
                 </fieldset>
                 <input type="submit" value="Complete Application" class="submitBtn">
         </form>
+            <table>
+                <caption>Membership Level Information</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Membership Level Benefits</th>
+                </tr>
+                <tr>
+                    <th class="blank"></th>
+                    <th scope="col">NP Membership</th>
+                    <th scope="col">Bronze Membership</th>
+                    <th scope="col">Silver Membership</th>
+                    <th scope="col">Gold Membership</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Special Events</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Training</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Advertising</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Event Discounts</td>
+                    <td>✔️</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Annual Membership Cost</td>
+                    <td>❌</td>
+                    <td>$100</td>
+                    <td>$125</td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+            </table>
         </main>
     <footer>
         <p>

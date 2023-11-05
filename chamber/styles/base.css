@@ -216,10 +216,11 @@ input:checked + .slider:before {
 /*-------------FORM-------------------*/
 form fieldset {
   margin: 2rem 0;
-  border: 2px solid #0e0f12;
+  border: 2px solid #ccc;
   border-radius: 10px;
   padding: .5rem 2%;
   text-align: left;
+  font-weight: bold;
 }
 label.top {
   display: block;
@@ -232,7 +233,6 @@ label.top {
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
-  color: #555;
   width: 100%;
   max-width: 20rem;
   background-color: var(--accent4-color);
@@ -240,10 +240,9 @@ label.top {
 form label.membership {
   display: block;
   padding: .75rem 0;
-  color: #555;
 }
 input.submitBtn {
-  border: none;
+  border: solid;
   background-color: var(--accent2-color);
   color: white;
   font-size: 1rem;
@@ -255,7 +254,7 @@ input.submitBtn {
   max-width: 20rem;
 }
 label.top input:required {
-  border-left: red solid 6px;
+  border-left: rgb(205, 18, 18) solid 6px;
 }
 label.top input:required:valid {
   border-left: #26532b solid 6px;
