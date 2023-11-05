@@ -52,6 +52,7 @@
             </div>    
     </nav>
     <main>
+        <div class="container">
         <form method="get" action="thankyou.html">
             <fieldset>
                 <legend>Member Information</legend>
@@ -60,11 +61,11 @@
                 <label class="top">Title or Position <input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" 
                     title="Please enter at least seven characters with only alphabets, hyphens, and spaces."></label>
                 <label class="top">Email* <input type="email" id="email" name="email" placeholder="someone@mail.com" required></label>
-                <label class="top">Mobile Phone Number* <input type="telephone" id="telephone" name="telephone" placeholder="1112345678" required></label>
+                <label class="top">Mobile Phone Number* <input type="tel" id="phone" name="phone" placeholder="1112345678" required></label>
                 </fieldset>
                 <fieldset>
-                    <legend>Membership Selection</legend>
-                    <label class="membership"><input type="radio" value="np-membership" name="membership"> Non-Profit Membership (Proof Required)</label>
+                    <legend>Membership Selection*</legend>
+                    <label class="membership"><input type="radio" value="np-membership" name="membership"> Non-Profit Membership (Proof will be requested)</label>
                     <label class="membership"><input type="radio" value="b-membership" name="membership"> Bronze Membership</label>
                     <label class="membership"><input type="radio" value="s-membership" name="membership"> Silver Membership</label>
                     <label class="membership"><input type="radio" value="g-membership" name="membership"> Gold Membership</label>
@@ -73,15 +74,16 @@
                     <legend>Additional Information</legend>
                     <label class="top">Business/Organization's Description <textarea id="description" name="description" rows="8" cols="30"></textarea></label>
                     <label class="top"><input type="hidden" id="timestamp" value="timestamp"></label>
-                    <label 
                 </fieldset>
                 <input type="submit" value="Complete Application" class="submitBtn">
         </form>
+        </div>
+        <div class="membership-info">
             <table>
-                <caption>Membership Level Information</caption>
+                <caption>More info: Annual memberships listed above, longer periods available upon request and eligible to discount.</caption>
             <thead>
                 <tr>
-                    <th colspan="5" scope="colgroup">Membership Level Benefits</th>
+                    <th colspan="5" scope="colgroup">Membership Levels</th>
                 </tr>
                 <tr>
                     <th class="blank"></th>
@@ -117,11 +119,11 @@
                     <td>Event Discounts</td>
                     <td>✔️</td>
                     <td>❌</td>
-                    <td>✔️</td>
+                    <td>❌</td>
                     <td>✔️</td>
                 </tr>
                 <tr>
-                    <td>Annual Membership Cost</td>
+                    <td>Membership Cost</td>
                     <td>❌</td>
                     <td>$100</td>
                     <td>$125</td>
@@ -129,6 +131,7 @@
                 </tr>
             </tbody>
             </table>
+        </div>
         </main>
     <footer>
         <p>

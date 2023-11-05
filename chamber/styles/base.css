@@ -42,6 +42,7 @@ nav a{
   background-color: var(--accent2-color); 
 }
 main {
+  display: grid;
   font: var(--font2);
   gap: 10px; 
   padding: 10px; 
@@ -102,7 +103,7 @@ footer {
   width: 100%;
   color: white;
 }
-/*toggle*/
+/*-----toggle-----*/
 .switch {
   position: absolute;
   top: 10px;
@@ -187,12 +188,6 @@ input:checked + .slider:before {
   font-weight: 1000;
   font-size: 30px;
 }
-.container {
-  display: grid;
-  grid: 1fr 1fr;
-  gap: 20px;
-}
-
 .sidebar {
   background-color: #f0f0f0;
   padding: 20px;
@@ -204,14 +199,14 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 768px) {
-  /* For mobile, switch to a single-column layout */
-  .container {
-    grid-template-columns: 1fr; /* Single column layout for mobile. */
-  }
+/* For mobile, switch to a single-column layout */
+.container {
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column layout for mobile. */
+}
 
-  .sidebar {
-    order: 2; /* Place sidebar after the main content in mobile view. */
-  }
+.sidebar {
+  order: 2; /* Place sidebar after the main content in mobile view. */
+}
 }
 /*-------------FORM-------------------*/
 form fieldset {
@@ -258,4 +253,39 @@ label.top input:required {
 }
 label.top input:required:valid {
   border-left: #26532b solid 6px;
+}
+/*---Table---*/
+table {
+  grid-column: 2/3;
+  grid-row: 1/2;
+	margin: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 5px var(--secondary-color);
+	border-collapse: collapse;
+}
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	font-size: 1.2rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 2px solid var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+}
+th {
+	background-color: var(--primary-color);
+	font-size: larger;
+  color: var(--accent1-color)
+}
+tr:first-child th {
+	background-color: var(--primary-color);
+	color: var(--accent1-color);
+}
+tr:nth-child(even) {
+	background-color: var(--accent4-color);
+}
+.blank {
+  background-color: var(--primary-color)
 }
