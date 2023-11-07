@@ -1,0 +1,28 @@
+{
+    "familyName":"Blake",
+    "dateFamilyMovedIn": "2023-03-12",
+    "numberOfFamilyMembers": 4,
+    "visitedByBishopric": false,
+    "familyMembers":[
+        {
+            "name": "Joseph Blake",
+            "gender": "Male",
+            "birthdate": "1978-03-11"
+        },
+        {
+            "name": "Irena Blake",
+            "gender": "Female",
+            "birthdate":"1981-15-07"
+        },
+        {
+            "name": "Felicity Blake",
+            "gender": "Female",
+            "birthdate":"2010-23-01"
+        },
+        {
+            "name": "Noah Blake",
+            "gender": "Male",
+            "birthdate":"2013-18-03"
+        }
+    ]
+}
