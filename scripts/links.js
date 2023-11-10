@@ -12,7 +12,7 @@ async function getLinks() {
 function displayLinks(weeks) {
     weeks.forEach((week) => {
         let list = document.createElement('li');
-        list.textContent = `${week.lesson}: `
+        list.textContent = `${week.lesson}: `;
 
         week.links.forEach((linkData) => {
             let link = document.createElement('a');
