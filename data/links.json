@@ -114,10 +114,22 @@
                 {
                     "url":"lesson05/new-ward-members.json",
                     "title":"JSON"
+                },
+                {
+                    "url":"lesson05/prophets.html",
+                    "title":"The Fetch API"
+                }
+            ]
+        },
+        {
+            "lesson":"10",
+            "links":[
+                {
+                    "url":"",
+                    "title":""
                 }
             ]
         }
-        
     ]
 }
        
