@@ -30,3 +30,11 @@ body.theme-dark {
     font-weight: bolder;
     font-size: larger;
   }
+  a {
+    color: #74b4f5;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }

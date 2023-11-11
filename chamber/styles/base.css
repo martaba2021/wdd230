@@ -47,6 +47,14 @@ main {
   gap: 10px; 
   padding: 10px; 
 }
+main a {
+  color: blue;
+  font-weight: bolder;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 ul {
   list-style: none;
 }
@@ -289,3 +297,4 @@ tr:nth-child(even) {
 .blank {
   background-color: var(--primary-color)
 }
+/*--- main directory ---*/
