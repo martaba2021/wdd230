@@ -5,7 +5,7 @@
             "address": "56849 Grand River, suite 3, South Lyon, MI 48178",
             "phoneNumber": "734-255-5555",
             "websiteURL": "https://menbakecookies.com/index.html",
-            "image": "images/men-bake-cookies.webp",
+            "image": "images/logos/men-bake-cookies.webp",
             "membershipLevel": "Silver",
             "yearsInBusiness": "5"
         },
@@ -50,7 +50,7 @@
             "address":"401 South Washington Street, South Lyon, MI 48178",
             "phoneNumber":"248-437-9790",
             "websiteURL":"https://www.activefaithcs.org/",
-            "image":"images/logos/active-faith.webp",
+            "image":"logos/active-faith.webp",
             "membershipLevel":"Non-Profit",
             "yearsInBusiness":"25"
         },
