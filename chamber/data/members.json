@@ -4,7 +4,7 @@
             "name": "Men Bake Cookies",
             "address": "56849 Grand River, Suite 3, South Lyon, MI 48178",
             "phoneNumber": "734-255-5555",
-            "companyURL": "https://menbakecookies.com/index.html",
+            "websiteURL": "https://menbakecookies.com/index.html",
             "image": "images/logos/men-bake-cookies.webp",
             "membershipLevel": "Silver",
             "yearsInBusiness": "5"
@@ -13,7 +13,7 @@
             "name": "The Learning Experience",
             "address": "20836 Pontiac Trail, South Lyon, MI 48178",
             "phoneNumber": "248-667-9197",
-            "companyURL": "https://thelearningexperience.com/centers/south-lyon-west/",
+            "websiteURL": "https://thelearningexperience.com/centers/south-lyon-west/",
             "image": "images/logos/the-learning-experience.webp",
             "membershipLevel": "Gold",
             "yearsInBusiness": "3"
@@ -22,7 +22,7 @@
             "name": "Lyon Counseling Center",
             "address": "127 N Lafayette Street, South Lyon, MI 48178",
             "phoneNumber": "248-573-7417",
-            "companyURL": "https://www.lyoncounselingcenter.com/",
+            "websiteURL": "https://www.lyoncounselingcenter.com/",
             "image": "images/logos/lyon-counseling.webp",
             "membershipLevel": "Gold",
             "yearsInBusiness": "10"
@@ -31,7 +31,7 @@
             "name": "DreamMaker Bath & Kitchem",
             "address": "117 North Lafayette Street, Suite B, South Lyon, MI 48178",
             "phoneNumber": "734-669-4000",
-            "companyURL": "https://dm-remodel.com/",
+            "websiteURL": "https://dm-remodel.com/",
             "image": "images/logos/dm-bath&kitchen.webp",
             "membershipLevel": "Gold",
             "yearsInBusiness": "10"
@@ -40,7 +40,7 @@
             "name": "Biggby Coffee",
             "address": "22729 Pontiac Trail, South Lyon, MI 48178",
             "phoneNumber": "248-278-6200",
-            "companyURL": "https://www.biggby.com/",
+            "websiteURL": "https://www.biggby.com/",
             "image": "images/logos/biggy-coffee.webp",
             "membershipLevel": "Silver",
             "yearsInBusiness": "7"
@@ -49,7 +49,7 @@
             "name": "Active Faith Church",
             "address": "401 South Washington Street, South Lyon, MI 48178",
             "phoneNumber": "248-437-9790",
-            "companyURL": "https://www.activefaithcs.org/",
+            "websiteURL": "https://www.activefaithcs.org/",
             "image": "logos/active-faith.webp",
             "membershipLevel": "Non-Profit",
             "yearsInBusiness": "25"
@@ -58,7 +58,7 @@
             "name": "Diane's Doll House",
             "address": "102 N Lafayetter Street, South Lyon, MI 48178",
             "phoneNumber": "248-486-0450",
-            "companyURL": "http://www.dianesdollsandtoys.com/",
+            "websiteURL": "http://www.dianesdollsandtoys.com/",
             "image": "images/logos/dianes-doll-house.webp",
             "membershipLevel": "Gold",
             "yearsInBusiness": "34"

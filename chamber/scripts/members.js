@@ -17,17 +17,17 @@ function displayMembers(companies) {
         let name = document.createElement('h3');
         let address = document.createElement('p');
         let phoneNumber = document.createElement('p');
-        let companyURL = document.createElement('a');
+        let websiteURL = document.createElement('a');
         let image = document.createElement('img');
         let membershipLevel = document.createElement('p');
         let yearsInBusiness = document.createElement('p');
         
-        name.textContent = `Company: ${member.name}`;
+        name.textContent = `${member.name}`;
         address.textContent = `Address: ${member.address}`;
         phoneNumber.textContent = `Phone: ${member.phoneNumber}`;
-        companyURL.textContent = `${member.companyURL}`;
-        companyURL.setAttribute('href', member.companyURL);
-        companyURL.setAttribute('target', "_blank");
+        websiteURL.textContent = `${member.websiteURL}`;
+        websiteURL.setAttribute('href', member.websiteURL);
+        websiteURL.setAttribute('target', "_blank");
         image.setAttribute('src', member.image);
         image.setAttribute('alt', member.name);
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
@@ -40,12 +40,14 @@ function displayMembers(companies) {
         section.appendChild(phoneNumber);
         section.appendChild(membershipLevel);
         section.appendChild(yearsInBusiness);
-        section.appendChild(companyURL)
+        section.appendChild(websiteURL)
 
         directoryList.appendChild(section);
     });
     
 }
+const directory = document.getElementById('directory');  
+const gridButton = document.getElementById('gridButton');
 
 gridButton.addEventListener('click', () => {
     directory.classList.remove('list-view');
