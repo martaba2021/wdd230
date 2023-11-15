@@ -1,7 +1,6 @@
 const chamberURL = "https://martaba2021.github.io/wdd230/chamber/";
 const membersURL = "https://martaba2021.github.io/wdd230/chamber/data/members.json";
-
-const directoryList = document.querySelector('#members');
+const directory = document.querySelector('.grid-view');
 
 async function getMembers() {
         const response = await fetch(membersURL);
@@ -10,9 +9,9 @@ async function getMembers() {
         displayMembers(data.members);
 }
 
-function displayMembers(companies) {
-    companies.forEach((member) => {
-        console.log(member);
+function displayMembers(members) {
+    members.forEach((member) => {
+        //console.log(member);
         let section = document.createElement('section');
         let name = document.createElement('h3');
         let address = document.createElement('p');
@@ -42,21 +41,22 @@ function displayMembers(companies) {
         section.appendChild(yearsInBusiness);
         section.appendChild(websiteURL)
 
-        directoryList.appendChild(section);
+        directory.appendChild(section);
     });
     
 }
-const directory = document.getElementById('directory');  
-const gridButton = document.getElementById('gridButton');
+const gridButton = document.getElementById('#gridButton');
+const listButton = document.getElementById('#listButton');
+const display = document.querySelector('article')
 
 gridButton.addEventListener('click', () => {
-    directory.classList.remove('list-view');
-    directory.classList.add('grid-view');
+    display.classList.remove('list-view');
+    display.classList.add('grid-view');
 });
 
 listButton.addEventListener('click', () => {
-    directory.classList.remove('grid-view');
-    directory.classList.add('list-view');
+    display.classList.remove('grid-view');
+    display.classList.add('list-view');
 });
 
 getMembers();
