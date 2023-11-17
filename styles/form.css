@@ -5,8 +5,8 @@
     --color3: #181312;
 }
 form fieldset {
-    margin: 2rem 0;
-    border: 2px solid #0e0f12;
+    margin: 3rem 0;
+    border: 3px solid #0e0f12;
     border-radius: 10px;
     padding: .5rem 2%;
 }
@@ -31,14 +31,19 @@ input.submitBtn {
     border: none;
     background-color: var(--color3);
     color: white;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 2rem;
+ 
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
 }
+.top input,
+input.submitBtn {
+    max-width: 80%; 
+}
+
 label.top input:required {
     border-left: red solid 6px;
 }
