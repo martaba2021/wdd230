@@ -63,20 +63,25 @@
                 <p>Join Today</p>
             </div>
         </div>
-        <!--<div id="hero" class="card">
-        <img src="images/south-lyon-panoramic.png" alt="panoramic view of a green trail and lake">
-            <div class="button-container">
-                <button class="join-button">Join the Chamber</button>
-            </div>-->
         <section id="events" class="card">
-            <h3>Current Events</h3>
-            <ul>    
-                <li>Event1</li>
-                <li>Event2</li>
-            </ul>
+            <h3>COMING EVENTS</h3>
+            <div id="banner" class="banner">
+            <button id="close-banner"> ❌</button>
+            <p>Please join us for our chamber of commerce meet and greet on Wednesday at 7:00 p.m. Both members and non-member welcome!</p>
+        </div>
         </section>
-        <section id="weather" class="card">
-            <h3>Weather</h3>
+        <section id="information" class="card">
+            <h3>INFORMATION</h3>
+            <h4>Current Weather</h4>
+            <div class="current-weather">  
+                <img id="weather-icon" src="a" alt="live-weather-conditions-icon">
+                <span id="weather-desc"></span> 
+                
+
+            </div>
+            <h4>3 Day Forecast</h4>
+            <div id="weather-forecast"></div>
+            
             <div>Temperature: <span id="temp">50</span>°F</div>
             <div>Wind Speed: <span id="windspeed">3</span>mph</div>
             <div>Wind Chill: <span id="windchill"></span></div>
@@ -96,5 +101,7 @@
     <script src="scripts/toggles-menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

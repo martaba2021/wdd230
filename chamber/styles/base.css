@@ -352,3 +352,29 @@ tr:nth-child(even) {
 #directory .list-view section p:nth-last-child(2) {
   display: none;
 }
+.current-weather,
+.current-weather * {
+    text-align: center;
+    vertical-align: middle;
+}
+.current-weather {
+  display: grid;  
+  border: 3px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+#weather-icon {
+    max-width: 75%;
+    max-height: 75%;
+}
+#weather-forecast {
+  display: flex;
+}
+#weather-forecast section {
+  margin-bottom: 10px; /* Add some spacing between forecast sections */
+  border-radius: 3px;
+}
+#weather-forecast section:nth-child(n+4) {
+  display: none;
+}
