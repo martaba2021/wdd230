@@ -42,10 +42,10 @@ nav a{
   background-color: var(--accent2-color); 
 }
 main {
-  display: grid;
+  /* display: grid; */
   font: var(--font2);
-  gap: 10px; 
-  padding: 10px; 
+  gap: 10px;
+  padding: 10px;
 }
 main a {
   color: blue;
@@ -354,21 +354,5 @@ tr:nth-child(even) {
 }
 
 #directory .list-view section p:nth-last-child(2) {
-  display: none;
-}
-
-#weather-forecast {
-  display: flex;
-}
-.current-weather {
-  border: double 3px #ccc;
-}
-#weather-forecast section {
-  margin-bottom: 10px; /* Add some spacing between forecast sections */
-  border-radius: 3px;
-  border: 3px solid #ccc;
-  border-radius: 10px;
-}
-#weather-forecast section:nth-child(n+4) {
   display: none;
 }
