@@ -35,7 +35,7 @@
         <h1 class="website-name">South Lyon Chamber of Commerce</h1>    
     </header>
     <nav>
-        <button id="menu" title="hambuger-menu"></button>
+        <button id="menu" title="hamburger-menu"></button>
         <!-- Rounded switch -->
         <label class="switch">
             <input type="checkbox" checked  id="mode">
@@ -44,7 +44,7 @@
             <div class="navigation">
                 <a href="https://martaba2021.github.io/wdd230/">Home</a>
                 <a href="https://martaba2021.github.io/wdd230/lesson03/chamber-site-plan.html">Site Plan</a>
-                <a href="https://martaba2021.github.io/wdd230/chamber/discover.html" class="active"">Discover</a>
+                <a href="https://martaba2021.github.io/wdd230/chamber/discover.html" class="active">Discover</a>
                 <a href="https://martaba2021.github.io/wdd230/chamber/">Chamber</a>
                 <a href="https://martaba2021.github.io/wdd230/chamber/directory">Directory</a>
                 <a href="https://martaba2021.github.io/wdd230/chamber/join.html">Join</a>
@@ -53,9 +53,10 @@
             </div>    
     </nav>
     <main>
-        <div class="container">
+        <div id="sidebar-content" class="container">
         <section id="demographic" class="card">
-            <h3>City of South Lyon Demographics</h3>
+            <h3>DEMOGRAPHICS</h3>
+            <h4>City of South Lyon demographics</h4>
             <p>Population estimates from the United States Census Bureau reports
                 that the City of South Lyon in July 1, 2022, had a population
                 of 11,827 people. That  city saw a growth of 0.7% from 2020 numbers
@@ -64,7 +65,7 @@
             </p>
         </section>
         <section id="events" class="card">
-            <h3>Upcoming events:</h3>
+            <h3>EVENTS</h3>
             <ul>
                 <li>Ladies' Night Out - Fall - Friday, November 10, 5-9 pm</li>
                 <li>Holiday Spectacular (formerly Cool Yule) - Saturday, December 2</li>
@@ -72,7 +73,7 @@
               </ul>
               </section>
         <section id="parks" class="card">
-            <h3>Parks</h3>
+            <h3>PARKS</h3>
             <p>The City has over 200 acres of parkland including: McHattie Park, 
                 Volunteer Park, Paul Baker Memorial Park (Fountain Park), 
                 Andover Park, Columbia Park and the Huron Valley Rail Trail.</p>
@@ -83,7 +84,7 @@
                     Recreation Authority oversees all recreation programming.</p>
         </section>
         <section id="history" class="card">
-            <h3>History</h3>
+            <h3>HISTORY</h3>
             <h4>South Lyon Area Historical Society</h4>
             <p>The City of South Lyon is very fortunate to have a group of dedicated volunteers,
                 intent on preserving the history of this area. It is the purpose of the Historical 
@@ -98,11 +99,14 @@
                 located in McHattie Park including tours of the Witch's Hat Depot and Freight House as 
                 well tours and use of the Washburn School for special projects.</p>
         </section>
+        <section>
+            <h3 id="visit-message">INFORMATION</h3>
+        </section>
         <div id="local-photos" class="local-photos">
             <picture>
                 <source media="(max-width: 500px)" srcset="images/fishing-small.webp">
                 <source media="(max-width: 1000px)" srcset="images/fishing-medium.webp">
-                <img class="photo1" src="images/fishing-large.webp" alt="Boat on a lake with men fishing" width="1500" height="750" loading="lazy">
+                <img class="photo1" src="images/fishing-large.webp" alt="People fishing in a boat on a lake" width="1500" height="750" loading="lazy">
             </picture>
             <picture>
                 <source media="(max-width: 500px)" srcset="images/sunset-small.webp">
@@ -141,6 +145,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/toggles-menu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src=""></script>
+    <script src="scripts/visits.js"></script>
 </body>
 </html>

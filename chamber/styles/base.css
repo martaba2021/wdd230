@@ -204,15 +204,25 @@ input:checked + .slider:before {
   background-color: #f0f0f0;
   padding: 20px;
 }
-
+#visit-message {
+  color:  var(--accent1-color) !important;
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
 .local-photos {
   background-color: #ffffff;
   padding: 20px;
 }
+#local-photos img {
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
 @media (max-width: 768px) {
 /* For mobile, switch to a single-column layout */
-.container {
+body .container {
   grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column layout for mobile. */
 }
 
