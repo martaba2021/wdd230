@@ -4,7 +4,7 @@ const weatherForecast = document.querySelector('#weather-forecast');
 
 
 const currentWeatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=42.46&lon=-83.65&units=imperial&appid=166fd1db0316d6728d136a8ed1d8912a';
-const weatherForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.46&lon=-83.65&units=imperial&appid=166fd1db0316d6728d136a8ed1d8912a';
+const weatherForecastURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.46&lon=-83.65&units=imperial&cnt=24&appid=166fd1db0316d6728d136a8ed1d8912a';
 
 async function apiFetchCurrent() {
     try{
@@ -37,9 +37,9 @@ async function apiFetchForecast() {
     try{
         const response = await fetch(weatherForecastURL);
         if (response.ok) {
-            const data2 = await response.json();
+            const data = await response.json();
             //console.log(data)
-            displayForecast(data2);
+            displayForecast(data);
         }
         else {
             throw Error(await response.text ());
