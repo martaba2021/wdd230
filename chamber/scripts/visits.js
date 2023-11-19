@@ -1,29 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const lastVisit = localStorage.getItem("lastVisit");
-  
-    var currentDate = new Date();
-  
-    if (!lastVisit) {
-        document.getElementById("visit-message").textContent =
-        "Welcome! Let us know if you have any questions.";
-    } 
-    else {
-        const timeDifference = currentDate - new Date(lastVisit);
-        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-  
-    if (daysDifference < 1) {
-        document.getElementById("visit-message").textContent =
-          "Back so soon! Awesome!";
-      } else {
-        var message =
-          daysDifference === 1
-            ? "day"
-            : "days";
-        document.getElementById("visit-message").textContent =
-          "You last visited " + daysDifference + " " + message + " ago.";
-      }
+const visitMessages = document.getElementById('visit-message');
+
+if (visitMessages) {
+    let visitMessage = Number(window.localStorage.getItem('localNumberVisits')) || 0
+    if (visitMessage !== 0) {
+        visitMessages.textContent = "You have visited " + visitMessage + " times.";
     }
-  
-    localStorage.setItem("lastVisit", currentDate.toString());
-  });
-  
+    else {
+        visitMessages.textContent = "Welcome! Let us know if you have any questions."
+    }
+    visitMessage++;
+    localStorage.setItem('localNumberVisits', visitMessage);
+}
+
+const lastVisitL = document.getElementById("last-visit");
+	
+if (lastVisitL){
+	const msToDays = 84600000;
+	const todaysDate = Date.now();
+	let lastVisit = Number(window.localStorage.getItem("lastVisit")) || 0;
+
+	if (todaysDate - lastVisit < msToDays){
+		lastVisitL.textContent = "Back so soon! Awesome! ";
+	} 
+    else if (lastVisit !== 0) {
+		const numbDays = Math.ceil((todaysDate - lastVisit) / msToDays);
+        const daysText = numbDays === 1 ? "day" : "days";
+        lastVisitL.textContent = "You last visited " + numbDays + " " + daysText + " ago.";
+	} 
+    else {
+		lastVisitL.textContent = "Welcome! Let us know if you have any questions.";
+	}
+	
+	localStorage.setItem("lastVisit", todaysDate);
+}
+

@@ -46,6 +46,7 @@ main {
   font: var(--font2);
   gap: 10px;
   padding: 10px;
+  justify-content: center;
 }
 main a {
   color: blue;
@@ -80,7 +81,7 @@ footer {
   font-size: 14px;
 }
  
-/* small view navigation*/
+/*---small view navigation---*/
 #menu {
 	font-size: 1.5rem;
   border-radius: 10px;
@@ -115,7 +116,7 @@ footer {
   width: 100%;
   color: white;
 }
-/*-----toggle-----*/
+/*---toggle---*/
 .switch {
   position: absolute;
   top: 10px;
@@ -200,17 +201,6 @@ input:checked + .slider:before {
   padding: 30px;
   font-size: 45px;
 }
-.sidebar {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-#visit-message {
-  color:  var(--accent1-color) !important;
-  background-color: var(--primary-color);
-  padding: 10px;
-  margin: 10px 10px;
-  border-radius: 10px;
-}
 .local-photos {
   background-color: #ffffff;
   padding: 20px;
@@ -219,18 +209,21 @@ input:checked + .slider:before {
   margin-top: 10px;
   border-radius: 5px;
 }
-
 @media (max-width: 768px) {
-/* For mobile, switch to a single-column layout */
-body .container {
-  grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column layout for mobile. */
+  /* For mobile, switch to a single-column layout */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .local-photos {
+    width: 100%; 
+    order: 0; 
+  }
 }
 
-.sidebar {
-  order: 2; /* Place sidebar after the main content in mobile view. */
-}
-}
-/*-------------FORM-------------------*/
+/*----Form---*/
 form fieldset {
   margin: 2rem 0;
   border: 2px solid #ccc;
@@ -365,4 +358,20 @@ tr:nth-child(even) {
 
 #directory .list-view section p:nth-last-child(2) {
   display: none;
+}
+/*---discover---*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.local-photos {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
 }
