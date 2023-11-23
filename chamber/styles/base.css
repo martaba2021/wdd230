@@ -196,10 +196,16 @@ input:checked + .slider:before {
   font: var(--font3);
 	/* Buenas */
 }
-.hero-label p { 
+.hero-label a { 
   margin: 5px;
-  padding: 30px;
+  top: 50%;
+  bottom: 50%;
   font-size: 45px;
+  color: var(--primary-color);
+}
+.hero-label a:hover {
+  background-color: #899a9ef5; /* Change color on hover */
+  text-decoration: none;
 }
 .local-photos {
   background-color: #ffffff;
@@ -360,18 +366,17 @@ tr:nth-child(even) {
   display: none;
 }
 /*---discover---*/
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
 .sidebar {
   flex: 1;
-  padding: 20px;
   box-sizing: border-box;
 }
-
-.local-photos {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
+.sidebar #discover.card #discover2.card {
+  display: grid;
+}
+.sidebar #discover.card {
+  grid-column: 1/2;
+  max-width: 80%;
+}
+.sidebar #discover2.card {
+  grid-column: 2/3;
 }
