@@ -221,8 +221,12 @@ input:checked + .slider:before {
   width: 100%; 
   order: 0; 
 }
+/*#spotlight .card {
+  position: relative;
+  max-width: 100%; 
+  order: 0;
+}*/
 }
-
 /*----Form---*/
 form fieldset {
   margin: 2rem 0;
@@ -379,4 +383,17 @@ tr:nth-child(even) {
 .sidebar {
   flex: 1;
   box-sizing: border-box;
+}
+/*---spotlight---*/
+#spotlight {
+  grid-column: 1/3;
+}
+#spotlight .card {
+  display: inline-block;
+  max-width: 30%;
+  padding-top: 10px;
+
+}
+#spotlight .card img {
+  max-width: 30%;
 }

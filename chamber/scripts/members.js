@@ -20,6 +20,8 @@ function displayMembers(members) {
         let image = document.createElement('img');
         let membershipLevel = document.createElement('p');
         let yearsInBusiness = document.createElement('p');
+
+        section.classList.add("card");
         
         name.textContent = `${member.name}`;
         address.textContent = `Address: ${member.address}`;
@@ -31,7 +33,6 @@ function displayMembers(members) {
         image.setAttribute('alt', member.name);
         membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
         yearsInBusiness.textContent = `Years in Business: ${member.yearsInBusiness}`;
-
 
         section.appendChild(image);
         section.appendChild(name);
