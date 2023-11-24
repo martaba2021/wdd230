@@ -62,13 +62,12 @@ body.theme-dark main p {
 }
 body.theme-dark main .discover p {
   color: var(--dark-secondary-color);
-  background-color: var(--dark-accent1-color);
+  background-color: var(--dark-secondary-color);
   font-weight: bolder;
   font-size: larger;
 }
 body.theme-dark main .local-photos {
   background-color: var(--dark-accent1-color);
-
 }
 body.theme-dark main a {
   color: #74b4f5;
