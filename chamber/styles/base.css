@@ -12,8 +12,8 @@
 }
 body {
   text-align: center;
-  margin: 0;   
-  padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 header {
   font: var(--font1);
@@ -42,7 +42,7 @@ nav a{
   background-color: var(--accent2-color); 
 }
 main {
-  /* display: grid; */
+  display: grid;
   font: var(--font2);
   gap: 10px;
   padding: 10px;
@@ -217,16 +217,10 @@ input:checked + .slider:before {
 }
 @media (max-width: 768px) {
   /* For mobile, switch to a single-column layout */
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .sidebar,
-  .local-photos {
-    width: 100%; 
-    order: 0; 
-  }
+.sidebar {
+  width: 100%; 
+  order: 0; 
+}
 }
 
 /*----Form---*/
@@ -369,14 +363,4 @@ tr:nth-child(even) {
 .sidebar {
   flex: 1;
   box-sizing: border-box;
-}
-.sidebar #discover.card #discover2.card {
-  display: grid;
-}
-.sidebar #discover.card {
-  grid-column: 1/2;
-  max-width: 80%;
-}
-.sidebar #discover2.card {
-  grid-column: 2/3;
 }

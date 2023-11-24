@@ -1,0 +1,78 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+header {
+    font-size: 1.5rem;
+    padding: 10px;
+    max-width: 100%;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    display: grid;
+    grid-column: 1/3;
+    align-items: center;
+}
+
+h2 {
+    max-height: 10%;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+.card {
+    max-height: 100%;
+    margin-top: 5px;
+    padding-top: 0;
+}
+
+.current-weather,
+.current-weather * {
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer {
+    max-width: 100%;
+}
+
+#menu {
+    display: none; /* hide hamburger button */
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
+
+.photo1:hover,
+.photo2:hover,
+.photo3:hover,
+.photo4:hover,
+.photo5:hover,
+.photo6:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.membership-info {
+    grid-column: 2/3;
+    max-width: 50%;
+}
+
+.sidebar {
+    flex: 1; 
+    max-width: 75%; 
+}
+}
+        
