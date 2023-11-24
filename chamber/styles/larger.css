@@ -69,12 +69,67 @@ footer {
   grid-column: 2/3;
   max-width: 50%;
 }
+/*#directory .grid-view {
+  gap: 40px;
+}
 
+#directory .list-view {
+  margin: 4rem;
+}
+
+#directory .list-view section h3 {
+  font-size: 20px;
+}*/
+#directory .directory-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#directory .view-buttons button {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#directory .grid-view,
+#directory .list-view {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#directory .list-view section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#directory .list-view img {
+  display: none;
+}
+
+#directory .list-view section p:last-child,
+#directory .list-view section p:nth-last-child(2) {
+  display: none;
+}
+
+#directory .list-view section h3 {
+  font-size: 16px;
+}
+
+#directory .list-view section:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+/***discover***/
 .sidebar {
   flex: 1; 
   max-width: 100%; 
 }
-
 .local-photos {
   flex: 1; 
   max-width: 100%; 

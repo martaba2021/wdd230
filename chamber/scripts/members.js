@@ -45,8 +45,11 @@ function displayMembers(members) {
     });
     
 }
-const gridButton = document.getElementById('#gridButton');
-const listButton = document.getElementById('#listButton');
+getMembers();
+
+document.addEventListener('DOMContentLoaded', () => {
+const gridButton = document.getElementById('gridButton');
+const listButton = document.getElementById('listButton');
 const display = document.querySelector('article')
 
 gridButton.addEventListener('click', () => {
@@ -58,5 +61,4 @@ listButton.addEventListener('click', () => {
     display.classList.remove('grid-view');
     display.classList.add('list-view');
 });
-
-getMembers();
+})

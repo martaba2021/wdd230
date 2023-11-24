@@ -305,15 +305,19 @@ tr:nth-child(even) {
   background-color: var(--primary-color)
 }
 /*--- directory ---*/
-#directory .menu {
-  display: flex;
-  flex-direction: row;
-	margin: 1rem auto;
-	padding: 0.5rem;
-	text-align: center;
+#directory {
+  text-decoration: none;
 }
-  
-#directory .menu button {
+#directory .directory-menu {
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: space;
+	margin-bottom: 1rem;
+	/*padding: 0.5rem;
+	text-align: center;
+  align-items: center;*/
+}
+#directory .directory-menu button {
   padding: 8px;
   margin: 5px;
   font-size: 24px;
@@ -322,25 +326,31 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 /*--- grid view ---*/
-#directory .grid-view {
+/*#directory .grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   align-items: center;
+}*/
+#directory .grid-view,
+#directory .list-view {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
-#directory .grid-view section {
+/*#directory .grid-view section {
   display: flex;
   flex-direction: column;
 }
 #directory .grid-view img {
   margin: 0 auto;
-}
+}*/
 /*--- list view ---*/
-#directory .list-view {
+/*#directory .list-view {
   display: flex;
   flex-direction: column;
   margin: 2rem;
-}
+}*/
 
 #directory .list-view section {
   display: grid;
@@ -352,12 +362,18 @@ tr:nth-child(even) {
   display: none;
 }
 
-#directory .list-view section p:last-child {
+/*#directory .list-view section p:last-child {
   display: none;
-}
-
+}*/
+#directory .list-view section p:last-child,
 #directory .list-view section p:nth-last-child(2) {
   display: none;
+}
+#directory .list-view section h3 {
+  font-size: 16px;
+}
+#directory .list-view section:nth-child(odd) {
+  background-color: lightgrey;
 }
 /*---discover---*/
 .sidebar {
