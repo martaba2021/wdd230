@@ -76,6 +76,8 @@ function displayForecast(data) {
         imgForecast.setAttribute('src', iconsrc);
         imgForecast.setAttribute('alt', `weather icon - ${data.weather[0].icon}`)
         paraForecast.innerHTML = `${data.main.temp}&deg;F`;
+        
+        sectionForecast.classList.add('card');
 
         sectionForecast.appendChild(headingForecast);
         sectionForecast.appendChild(imgForecast);

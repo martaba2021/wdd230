@@ -1,6 +1,6 @@
 const chamberURL = "https://martaba2021.github.io/wdd230/chamber/";
 const membersURL = "https://martaba2021.github.io/wdd230/chamber/data/members.json";
-const directory = document.querySelector('#spotlight');
+const spotlight = document.querySelector('#spotlight');
 
 async function getMembers() {
   const response = await fetch(membersURL);
@@ -19,7 +19,7 @@ function displayRandomMembers(membersList, itemNumber) {
     let name = document.createElement('h3');
     let address = document.createElement('p');
     let phoneNumber = document.createElement('p');
-    let websiteURL = document.createElement('a');
+    //let websiteURL = document.createElement('a');
     let image = document.createElement('img');
     let membershipLevel = document.createElement('p');
     let yearsInBusiness = document.createElement('p');
@@ -27,25 +27,30 @@ function displayRandomMembers(membersList, itemNumber) {
     section.classList.add("card");
 
     name.textContent = `${member.name}`;
+    
+    //create anchor tag
+    let nameLink = document.createElement('a');
+  
+    nameLink.setAttribute('href', member.websiteURL);
+    nameLink.setAttribute('target', "_blank");
+    nameLink.appendChild(name);
+
     address.textContent = `Address: ${member.address}`;
     phoneNumber.textContent = `Phone: ${member.phoneNumber}`;
-    websiteURL.textContent = `${member.websiteURL}`;
-    websiteURL.setAttribute('href', member.websiteURL);
-    websiteURL.setAttribute('target', "_blank");
     image.setAttribute('src', member.image);
     image.setAttribute('alt', member.name);
     membershipLevel.textContent = `Membership Level: ${member.membershipLevel}`;
     yearsInBusiness.textContent = `Years in Business: ${member.yearsInBusiness}`;
 
     section.appendChild(image);
-    section.appendChild(name);
+    section.appendChild(nameLink); // Append the anchor tag
     section.appendChild(address);
     section.appendChild(phoneNumber);
     section.appendChild(membershipLevel);
     section.appendChild(yearsInBusiness);
-    section.appendChild(websiteURL)
+    //section.appendChild(websiteURL)
 
-    directory.appendChild(section);
+    spotlight.appendChild(section);
   });
 }
 

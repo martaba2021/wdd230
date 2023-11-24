@@ -70,6 +70,10 @@ ul {
     text-align: center;
     vertical-align: middle;
 }
+#weather-forecast .card{
+  display: inline-block;
+  width: 20%;
+}
 footer {
   text-align: center;
   padding: 10px;
@@ -315,7 +319,7 @@ tr:nth-child(even) {
 #directory .directory-menu {
   display: flex;
   /*flex-direction: row;*/
-  justify-content: space;
+  justify-content:center;
 	margin-bottom: 1rem;
 	/*padding: 0.5rem;
 	text-align: center;
@@ -392,7 +396,6 @@ tr:nth-child(even) {
   display: inline-block;
   max-width: 30%;
   padding-top: 10px;
-
 }
 #spotlight .card img {
   max-width: 30%;
