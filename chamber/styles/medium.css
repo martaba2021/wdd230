@@ -72,7 +72,9 @@ footer {
 #directory .directory-menu {
 margin: 2rem;
 }
-
+#directory .grid-view a {
+    width: 100%;
+  }
 /*#directory .directory-menu button {
 font-size: 28px;
 }

@@ -346,13 +346,18 @@ tr:nth-child(even) {
   flex-direction: column;
   margin: 1rem;
 }
-/*#directory .grid-view section {
+
+#directory .grid-view section {
   display: flex;
   flex-direction: column;
 }
+
 #directory .grid-view img {
-  margin: 0 auto;
-}*/
+  padding-top: 1rem ;
+}
+
+
+
 /*--- list view ---*/
 /*#directory .list-view {
   display: flex;
