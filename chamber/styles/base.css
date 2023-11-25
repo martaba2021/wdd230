@@ -14,7 +14,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  align-items: center;
+  /*align-items: center;*/
 }
 header {
   font: var(--font1);
@@ -112,9 +112,18 @@ footer {
 	flex-direction: column;
 	list-style: none;
 	color: #fff;
+  font-weight: bolder;
 }
 .navigation a {
   display: none;
+  text-decoration: none;
+}
+/*show emoji in nav menu. Emoji applied using copy and paste */    
+nav a:hover {
+  background-color: #838282;
+}
+nav a:hover::before {
+  content:  "👉";
 }
 .open a {
   display: block;
@@ -226,12 +235,7 @@ input:checked + .slider:before {
   width: 100%; 
   order: 0; 
 }
-/*#spotlight .card {
-  position: relative;
-  max-width: 100%; 
-  order: 0;
-}*/
-}
+
 /*----Form---*/
 form fieldset {
   margin: 2rem 0;
@@ -329,7 +333,7 @@ tr:nth-child(even) {
   font-size: 24px;
   border: none;
   border-radius: 5px;
-  font-weight: larger;
+  font-weight: bold;
 }
 /*--- grid view ---*/
 #directory .grid-view {
@@ -344,33 +348,26 @@ tr:nth-child(even) {
 
 #directory .grid-view img {
   padding-top: 1rem ;
+  max-width: 60%;
 }
-
 /*--- list view ---*/
-/*#directory .list-view {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
-}*/
 #directory .list-view {
   display: flex;
   flex-direction: column;
   margin: 1rem;
+  align-items: center;
 }
 #directory .list-view section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr ; 
   grid-gap: 20px;
 }
-
+}
 #directory .list-view img {
   display: none;
   align-items: center;
-}
 
-/*#directory .list-view section p:last-child {
-  display: none;
-}*/
+
 #directory .list-view section p:last-child,
 #directory .list-view section p:nth-last-child(2) {
   display: none;
@@ -388,13 +385,10 @@ tr:nth-child(even) {
 }
 /*---spotlight---*/
 #spotlight {
-  grid-column: 1/3;
+  flex: 1;
+  max-width: 100% ;
 }
 #spotlight .card {
-  display: inline-block;
-  max-width: 30%;
-  padding-top: 10px;
+  max-width: 100%;
 }
-#spotlight .card img {
-  max-width: 30%;
 }

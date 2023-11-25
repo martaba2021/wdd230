@@ -54,6 +54,12 @@ footer {
   display: block;
   flex: 1 1 100%;
 }
+nav a:hover {
+  background-color: #838282;
+}
+nav a:hover::before {
+  content:  "👉";
+}
 
 .photo1:hover,
 .photo2:hover,
@@ -68,14 +74,77 @@ footer {
   grid-column: 2/3;
   max-width: 50%;
 }
+/*--- directory ---*/
+#directory {
+  text-decoration: none;
+  display: inline-block
+}
+#directory .directory-menu {
+  display: flex;
+  justify-content: center;
+	margin-bottom: 1rem;
+}
+#directory .directory-menu button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/*--- grid view ---*/
+#directory .grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+#directory .grid-view img {
+  padding-top: 1rem ;
+  max-width: 100%;
+}
+
+/*--- list view ---*/
+
+#directory .list-view {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+#directory .list-view section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-gap: 20px;
+}
+
+#directory .list-view img {
+  display: none;
+  align-items: center;
+}
+
+#directory .list-view section p:last-child,
+#directory .list-view section p:nth-last-child(2) {
+  display: none;
+}
+#directory .list-view section h3 {
+  font-size: 16px;
+}
+#directory .list-view section:nth-child(odd) {
+  background-color: lightgrey;
+}
+/*
 #directory .directory-menu {
   margin: 1rem;
   grid-column: 1/3;
   grid-row: 1/2;
 }
-
-/*#directory .grid-view {
-  gap: 40px;
+#directory .grid-view .card {
+  display: inline-block;
+}
+#directory .grid-view img{
+  max-width: 80%;
+  margin-top: 15px;
 }
 
 #directory .list-view {
@@ -84,7 +153,7 @@ footer {
 
 #directory .list-view section h3 {
   font-size: 20px;
-}*/
+}
 #directory .directory-menu {
   display: flex;
   justify-content: ;
@@ -100,7 +169,6 @@ footer {
   cursor: pointer;
 }
 
-#directory .grid-view,
 #directory .list-view {
   display: flex;
   flex-direction: column;
@@ -133,7 +201,7 @@ footer {
 #directory .list-view section:nth-child(odd) {
   background-color: lightgrey;
 }
-
+*/
 /***discover***/
 .sidebar {
   flex: 1; 
@@ -148,7 +216,8 @@ footer {
   grid-column: 1/3;
 }
 #spotlight .card {
-  width: 35%;
+  display: inline-block;
+  width: 30%;
   padding-top: 10px;
 }
 #spotlight .card img {

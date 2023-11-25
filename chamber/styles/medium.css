@@ -55,6 +55,12 @@ footer {
     display: block;
     flex: 1 1 100%;
 }
+nav a:hover {
+background-color: #838282;
+}
+nav a:hover::before {
+content:  "👉";
+}
 
 .photo1:hover,
 .photo2:hover,
@@ -109,8 +115,8 @@ font-size: 16px;
 
 #directory .grid-view,
 #directory .list-view {
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex; 
+    flex-direction: column; 
     /* margin: 2rem; */
 }
 
@@ -122,6 +128,7 @@ font-size: 16px;
 
 #directory .list-view img {
     display: none;
+    max-width: 50%;
 }
 
 #directory .list-view section p:last-child,
