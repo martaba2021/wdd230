@@ -14,6 +14,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 header {
   font: var(--font1);
@@ -315,48 +316,35 @@ tr:nth-child(even) {
 /*--- directory ---*/
 #directory {
   text-decoration: none;
+  display: inline-block;
 }
 #directory .directory-menu {
   display: flex;
-  /*flex-direction: row;*/
-  justify-content:center;
+  justify-content: center;
 	margin-bottom: 1rem;
-	/*padding: 0.5rem;
-	text-align: center;
-  align-items: center;*/
 }
 #directory .directory-menu button {
-  padding: 8px;
+  padding: 10px;
   margin: 5px;
   font-size: 24px;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: larger;
 }
 /*--- grid view ---*/
-/*#directory .grid-view {
+#directory .grid-view {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   align-items: center;
-}*/
-#directory .grid-view,
-#directory .list-view {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
 }
-
-#directory .grid-view section {
-  display: flex;
-  flex-direction: column;
+#directory .grid-view .card section {
+  display: block;
 }
 
 #directory .grid-view img {
   padding-top: 1rem ;
 }
-
-
 
 /*--- list view ---*/
 /*#directory .list-view {
@@ -364,7 +352,11 @@ tr:nth-child(even) {
   flex-direction: column;
   margin: 2rem;
 }*/
-
+#directory .list-view {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
 #directory .list-view section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -373,6 +365,7 @@ tr:nth-child(even) {
 
 #directory .list-view img {
   display: none;
+  align-items: center;
 }
 
 /*#directory .list-view section p:last-child {
