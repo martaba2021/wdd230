@@ -1,7 +1,10 @@
+window.addEventListener('load', (event) => {
+  //console.log('Page is fully loaded');
 const darkMode = document.getElementById('mode');
 const body = document.body;
 
 darkMode.addEventListener('change', () => {
+  //console.log('Dark mode changed');
   if (darkMode.checked) {
     body.classList.add('theme-dark');
   } else {
@@ -9,6 +12,7 @@ darkMode.addEventListener('change', () => {
   }
 });
 function toggleDarkMode() {
+  //console.log('Toggling dark mode');
 const darkThemeLink = document.getElementById('dark-theme-link');
   if (darkThemeLink) {
     // Dark mode CSS is already loaded, so remove it to switch back to the light theme.
@@ -20,7 +24,10 @@ const darkThemeLink = document.getElementById('dark-theme-link');
     link.rel = 'stylesheet';
     link.href = 'styles/dark-theme.css'; 
     document.head.appendChild(link);
-}}
-const darkModeButton = document.getElementById('dark-mode-button'); 
-darkModeButton.addEventListener('click', toggleDarkMode);
+}
+}
+const darkModeButton = document.getElementsByName('theme'); 
+darkModeButton.addEventListener('change', toggleDarkMode);
+toggleDarkMode();
+});
   

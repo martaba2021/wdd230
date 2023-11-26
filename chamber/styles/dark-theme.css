@@ -130,3 +130,13 @@ body.theme-dark footer p {
   font-weight: bolder;
   font-size: larger;
 }
+@media (min-width: 768px) {
+body.theme-dark .photo1:hover,
+body.theme-dark .photo2:hover,
+body.theme-dark .photo3:hover,
+body.theme-dark .photo4:hover,
+body.theme-dark .photo5:hover,
+body.theme-dark .photo6:hover {
+  box-shadow: 0 0 50px rgb(122, 120, 120);
+}
+}
