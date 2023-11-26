@@ -258,16 +258,16 @@ form fieldset {
   border-radius: 10px;
   padding: .5rem 2%;
   text-align: left;
-  font-weight: bold;
+  font-weight: bolder;
 }
 label.top {
   display: block;
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .top input, textarea {
   display: block;
-  font-size: 1rem;
+  font-size: 2rem;
   border: solid 1px #999;
   border-radius: 4px;
   padding: .75rem;
@@ -283,7 +283,7 @@ input.submitBtn {
   border: solid;
   background-color: var(--accent2-color);
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
@@ -309,7 +309,7 @@ table {
 caption {
   padding: 10px;
   caption-side: bottom;
-	font-size: 1.2rem;
+	font-size: 2rem;
 }
 th, td {
 	padding: 7px 15px;
@@ -345,10 +345,10 @@ tr:nth-child(even) {
 #directory .directory-menu button {
   padding: 10px;
   margin: 5px;
-  font-size: 24px;
+  font-size: 2rem;
   border: none;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 /*--- grid view ---*/
 #directory .grid-view {
@@ -387,7 +387,7 @@ tr:nth-child(even) {
   display: none;
 }
 #directory .list-view section h3 {
-  font-size: 16px;
+  font-size: 2rem;
 }
 #directory .list-view section:nth-child(odd) {
   background-color: lightgrey;
@@ -410,5 +410,32 @@ tr:nth-child(even) {
 }
 #spotlight img {
   display: none;
+}
+.website-name {
+  font-size: 3rem;
+}
+#lastModified {
+  font-size: 1.5rem;
+}
+#menu {
+	font-size: 2rem;
+}
+.hero-label a { 
+  font-size: 3rem;
+}
+label.top {
+  font-size: 2rem;
+}
+.top input, textarea {
+  font-size: 1.5rem;
+}
+input.submitBtn {
+  font-size: 1.5rem;
+}
+caption {
+	font-size: 2rem;
+}
+nav, main, footer {
+  font-size: 1.5rem;
 }
 }
