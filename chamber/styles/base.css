@@ -438,4 +438,7 @@ caption {
 nav, main, footer {
   font-size: 1.5rem;
 }
+table {
+  display: none;
+}
 }
