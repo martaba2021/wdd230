@@ -83,7 +83,7 @@ footer {
   color: white;
 }
 #lastModified {
-  font-size: 14px;
+  font-size: 1rem;
 }
  
 /*---small view navigation---*/
@@ -235,7 +235,6 @@ input:checked + .slider:before {
   width: 100%; 
   order: 0; 
 }
-
 /*----Form---*/
 form fieldset {
   margin: 2rem 0;

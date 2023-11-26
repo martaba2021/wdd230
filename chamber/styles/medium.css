@@ -73,20 +73,6 @@ footer {
 #directory .grid-view a {
     width: 100%;
 }
-/*#directory .directory-menu button {
-font-size: 28px;
-}
-
-#directory .grid-view {
-gap: 30px;
-}
-
-#directory .list-view {
-margin: 2.5rem;
-}
-#directory .list-view section h3 {
-font-size: 16px;
-}*/
 #directory .directory-menu {
     display: flex;
     justify-content: space-between;
@@ -133,7 +119,7 @@ font-size: 16px;
     background-color: lightgrey;
 }
 /*----Form---*/
-}
+
 form fieldset {
     margin: 2rem 0;
     border: 2px solid #ccc;

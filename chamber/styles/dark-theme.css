@@ -4,7 +4,6 @@
   --dark-secondary-color: white;
   --dark-background-color: #3f3b3b;
 }
-/* Dark Mode */
 body.theme-dark {
   --primary-color: var(--dark-primary-color);
   --secondary-color: var(--dark-secondary-color);
@@ -27,7 +26,6 @@ body.theme-dark main a:hover {
   background-color: #899a9ef5; 
   text-decoration: none;
 }
-
 body.theme-dark nav a:hover {
   background-color: #899a9ef5; 
   text-decoration: underline;
@@ -76,11 +74,49 @@ body.theme-dark main .discover p {
   font-weight: bolder;
   font-size: larger;
 }
-body.theme-dark main .form .blank thead {
-  color: var(--dark-secondary-color);
+body.theme-dark form fieldset {
+  margin: 2rem 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  text-align: left;
+  font-weight: bolder;
 }
-body.theme-dark main .local-photos {
-  background-color: var(--dark-background-color);
+body.theme-dark label.top {
+  font-weight: bolder;
+  font-size: larger;
+}
+body.theme-dark .top input, textarea {
+  border: solid 1px #ccc;
+  background-color: var(--dark-secondary-color);
+  font-weight: bolder;
+  font-size: larger;
+}
+body.theme-dark input.submitBtn {
+  font-weight: bolder;
+  font-size: larger;
+}
+body.theme-dark th, td {
+	padding: 7px 15px;
+	border: 2px solid var(--dark-secondary-color);
+  text-align: center;
+  font-weight: bold;
+}
+body.theme-dark th {
+	background-color: var(--dark-background-color);
+	font-size: larger;
+  font-weight: bold;
+  color: var(--dark-secondary-color)
+}
+body.theme-dark tr:first-child th {
+	background-color: var(--dark-primary-color);
+	color: var(--dark-secondary-color);
+}
+body.theme-dark tr:nth-child(even) {
+	background-color: var(--primary-color);
+}
+body.theme-dark .blank {
+  background-color: var(--dark-primary-color)
 }
 body.theme-dark footer p {
   color: var(--dark-secondary-color);
