@@ -66,14 +66,24 @@ ul {
   margin: 5px;
   border-radius: 10px;
 }
+#information h4 {
+  margin-top: 2.5rem;
+}
 .current-weather,
 .current-weather * {
-    text-align: center;
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 }
-#weather-forecast .card{
+.current-weather {
+  margin-bottom: 2rem;
+}
+#weather-forecast .card {
   display: inline-block;
   width: 20%;
+  padding-bottom: 1rem;
+}
+#placeholder2 {
+  padding-top: 2rem;
 }
 footer {
   text-align: center;
@@ -394,5 +404,11 @@ tr:nth-child(even) {
 }
 #spotlight .card {
   max-width: 100%;
+}
+#weather-forecast .card {
+  display: none;
+}
+#spotlight img {
+  display: none;
 }
 }
