@@ -6,13 +6,13 @@ header {
 }
 main {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.container {
+/*.container {
   display: flex;
   flex-wrap: wrap;
-}
+}*/
 
 main h2 {
   display: grid;
@@ -54,12 +54,6 @@ footer {
   display: block;
   flex: 1 1 100%;
 }
-nav a:hover {
-  background-color: #838282;
-}
-nav a:hover::before {
-  content:  "👉";
-}
 
 .photo1:hover,
 .photo2:hover,
@@ -70,10 +64,6 @@ nav a:hover::before {
   box-shadow: 0 0 50px #333;
 }
 
-.membership-info {
-  grid-column: 2/3;
-  max-width: 50%;
-}
 /*--- directory ---*/
 #directory {
   text-decoration: none;
@@ -224,4 +214,98 @@ nav a:hover::before {
   width: 30%;
 }
 }
-  
+/*----Form---*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  text-align: left;
+}
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  text-align: left;
+  max-width: 100%;
+  font-weight: bold;
+}
+label.top {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+  max-width: 80%;
+}
+.top input, textarea {
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  width: 100%;
+  max-width: 20rem;
+  background-color: var(--accent4-color);
+}
+form label.membership {
+  display: block;
+  padding: .75rem 0;
+}
+input.submitBtn {
+  border: solid;
+  background-color: var(--accent2-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+label.top input:required {
+  border-left: rgb(205, 18, 18) solid 6px;
+}
+label.top input:required:valid {
+  border-left: #26532b solid 6px;
+}
+/*---Table---*/
+.top, .membership {
+  padding-bottom: 5px;
+  display: block;
+}
+.membership-info {
+  grid-column: 2/3;
+  /* width: 60%; */
+}
+table {
+  grid-column: 2/3;
+  margin: 2.5rem 0;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 5px var(--secondary-color);
+  border-collapse: collapse;
+  max-width: 100%;
+}
+caption {
+  padding: 10px;
+  caption-side: bottom;
+	font-size: 1.2rem;
+}
+th, td {
+	padding: 7px 15px;
+	border: 2px solid var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+}
+th {
+	background-color: var(--primary-color);
+	font-size: larger;
+  color: var(--accent1-color)
+}
+tr:first-child th {
+	background-color: var(--primary-color);
+	color: var(--accent1-color);
+}
+tr:nth-child(even) {
+	background-color: var(--accent4-color);
+}
+.blank {
+  background-color: var(--primary-color)
+}

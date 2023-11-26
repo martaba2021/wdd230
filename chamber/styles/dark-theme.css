@@ -2,22 +2,32 @@
 /* Dark Mode*/
   --dark-primary-color: #000;
   --dark-secondary-color: white;
-  --dark-accent1-color: #3f3b3b;
+  --dark-background-color: #3f3b3b;
 }
 /* Dark Mode */
 body.theme-dark {
   --primary-color: var(--dark-primary-color);
   --secondary-color: var(--dark-secondary-color);
-  --accent1-color: var(--dark-accent1-color);
+  --accent1-color: var(--dark-background-color);
   background-color: var(--dark-primary-color);
   color: var(--dark-secondary-color);
-  font-weight: 1000;
 }
 body.theme-dark nav a { /*top navigation green*/
   text-decoration: none;
   font-weight: bolder;
   font-size: larger;
 }
+body.theme-dark main a {
+  color: #74b4f5;
+  font-weight: bolder;
+  text-decoration: none;
+}
+body.theme-dark main a:hover {
+  color: var(--primary-color);
+  background-color: #899a9ef5; 
+  text-decoration: none;
+}
+
 body.theme-dark nav a:hover {
   background-color: #899a9ef5; 
   text-decoration: underline;
@@ -27,14 +37,14 @@ body.theme-dark p{
 }
 body.theme-dark main {
   color: var(--dark-secondary-color);
-  background-color: var(--dark-accent1-color);
+  background-color: var(--dark-background-color);
   font-weight: bolder;
   font-size: larger;
 }
 body.theme-dark main .hero-label a { /*hero-label button*/
   color: var(--dark-secondary-color);
-  background-color: var(--dark-accent1-color);
-  //text-decoration: underline;
+  background-color: var(--dark-background-color);
+  text-decoration: underline;
 }
 body.theme-dark main .hero-label a:hover { /*hero-label button*/
   text-decoration: underline;
@@ -50,13 +60,13 @@ body.theme-dark main h4,
 body.theme-dark main h5,
 body.theme-dark main h6 {
   color: var(--dark-secondary-color);
-  background-color: var(--dark-accent1-color);
+  background-color: var(--dark-background-color);
   font-weight: bolder;
   font-size: larger;
 }
 body.theme-dark main p {
   color: var(--dark-secondary-color);
-  background-color: var(--dark-accent1-color);
+  background-color: var(--dark-background-color);
   font-weight: bolder;
   font-size: larger;
 }
@@ -66,20 +76,12 @@ body.theme-dark main .discover p {
   font-weight: bolder;
   font-size: larger;
 }
+body.theme-dark main .form .blank thead {
+  color: var(--dark-secondary-color);
+}
 body.theme-dark main .local-photos {
-  background-color: var(--dark-accent1-color);
+  background-color: var(--dark-background-color);
 }
-body.theme-dark main a {
-  color: #74b4f5;
-  font-weight: bolder;
-  text-decoration: none;
-}
-body.theme-dark main a:hover {
-  color: var(--primary-color);
-  background-color: #899a9ef5; 
-  text-decoration: none;
-}
-
 body.theme-dark footer p {
   color: var(--dark-secondary-color);
   background-color: var(--dark-primary-color);

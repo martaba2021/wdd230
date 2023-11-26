@@ -43,7 +43,7 @@ nav a{
   background-color: var(--accent2-color); 
 }
 main {
-  display: grid;
+  /* display: grid; */
   font: var(--font2);
   gap: 10px;
   padding: 10px;
@@ -362,12 +362,11 @@ tr:nth-child(even) {
   grid-template-columns: 1fr ; 
   grid-gap: 20px;
 }
-}
+
 #directory .list-view img {
   display: none;
   align-items: center;
-
-
+}
 #directory .list-view section p:last-child,
 #directory .list-view section p:nth-last-child(2) {
   display: none;
