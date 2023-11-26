@@ -42,7 +42,7 @@ body.theme-dark main {
 body.theme-dark main .hero-label a { /*hero-label button*/
   color: var(--dark-secondary-color);
   background-color: var(--dark-background-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 body.theme-dark main .hero-label a:hover { /*hero-label button*/
   text-decoration: underline;
@@ -61,6 +61,9 @@ body.theme-dark main h6 {
   background-color: var(--dark-background-color);
   font-weight: bolder;
   font-size: larger;
+}
+body.theme-dark main .local-photos {
+  background-color: var(--dark-background-color);
 }
 body.theme-dark main p {
   color: var(--dark-secondary-color);
@@ -117,6 +120,9 @@ body.theme-dark tr:nth-child(even) {
 }
 body.theme-dark .blank {
   background-color: var(--dark-primary-color)
+}
+body.theme-dark #directory .list-view section:nth-child(odd) {
+  background-color: var(--dark-background-color);
 }
 body.theme-dark footer p {
   color: var(--dark-secondary-color);
