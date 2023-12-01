@@ -28,7 +28,8 @@ function displayResults(data) {
     let temp = data.main.temp;
     let humidity = data.main.humidity;
 
-    tempDesc.innerHTML = `${temp.toFixed(0)}&deg;F - ${desc.charAt(0).toUpperCase() + desc.slice(1)} - Humidity: ${humidity}%`;
+    tempDesc.innerHTML = `${temp.toFixed(0)}&deg;F ${desc}<br>${humidity}% humidity`;
+
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', `weather icon - ${data.weather[0].icon}`);
@@ -36,7 +37,7 @@ function displayResults(data) {
 
 async function fetchWeatherAlerts(latitude, longitude) {
     const weatherAlertsURL = `https://api.weather.gov/alerts?point=${latitude},${longitude}`;
-    
+
     try {
         const response = await fetch(weatherAlertsURL);
         if (response.ok) {
@@ -44,7 +45,10 @@ async function fetchWeatherAlerts(latitude, longitude) {
             if (data.features && data.features.length > 0) {
                 const alert = data.features[0].properties;
                 alertMessage.innerHTML = `<strong>${alert.headline}</strong>: ${alert.description}`;
-                alertMessage.style.display = 'block';
+                document.getElementById('alert').style.display = 'block';
+            } else {
+                // Hide the alert element if there are no alerts
+                document.getElementById('alert').style.display = 'none';
             }
         } else {
             throw Error(await response.text());
@@ -53,6 +57,7 @@ async function fetchWeatherAlerts(latitude, longitude) {
         console.log(error);
     }
 }
+
 
 async function apiFetchForecast() {
     try {
@@ -90,7 +95,7 @@ function displayForecast(data) {
             const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
             imgForecast.setAttribute('src', iconsrc);
             imgForecast.setAttribute('alt', `weather icon - ${data.weather[0].icon}`)
-            paraForecast.innerHTML = `${data.main.temp}&deg;F`;
+            paraForecast.innerHTML = `${data.main.temp.toFixed(0)}&deg;F`;
 
             sectionForecast.classList.add('card');
 
@@ -105,5 +110,11 @@ function displayForecast(data) {
 document.getElementById('closeBtn').addEventListener('click', closeAlert);
 
 function closeAlert() {
-    document.getElementById('alert').style.display = 'none';
+    const alertElement = document.getElementById('alert');
+    const alertMessage = document.querySelector('#alert-message');
+
+    // Check if there is an alert message before displaying the close button
+    if (alertMessage.innerHTML.trim() !== '') {
+        alertElement.style.display = 'none';
+    }
 }

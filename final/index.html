@@ -9,7 +9,7 @@
     <meta property="og:title" content="WDD230 - Final Project">
     <meta property="og:type" content="Website">
     <meta property="og:image" content="https://www.mexperience.com/wp-content/uploads/Cozumel-Beach-Resort-Aerial-NBS-750x375.jpg">
-    <meta property="og:url" content="https://martaba2021.github/wdd230/final.html">
+    <meta property="og:url" content="https://martaba2021.github.io/wdd230/final.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -101,7 +101,8 @@
                     <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
                 </ul></li>
             </ul>
-            <section>
+            </section>
+            <section id="contact" class="card">
                 <h3>CONTACT INFORMATION</h3>
                 <h4>Centro de Cozumel</h4>
                 <p>Phone: +52-990-746-8933</p>
@@ -110,12 +111,13 @@
                 <p>📧 <strong>Email us at:</strong> scoots@mexico.com</p>
             </section>
         </section>
-        <section id="information" class="card">
+        <section id="weather-infor" class="card">
             <h3>INFORMATION</h3>
             <div id="alert">
-                <span id="closeBtn" onclick="closeAlert()">&times;</span>
                 <p id="alert-message"></p>
+                <button id="closeBtn">Close</button>
             </div>
+            
             <h4>Current Weather</h4>
             <div class="current-weather">  
                 <img id="weather-icon" src="a" alt="live-weather-conditions-icon">
