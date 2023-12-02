@@ -5,6 +5,7 @@
 --fourth-color: #FFDD4A;
 --fifth-color: #FE9000;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -25,13 +26,58 @@ nav {
   background-color: var(--fifth-color); 
   font-size: 1.3rem;
 }
-
 nav a {
   color: black; 
   text-align: center;
   text-decoration: none;
   padding: 0.4rem;
-  min-width: 25%;
+  /*min-width: 25%;*/
+}
+nav a:hover {
+  background-color: gainsboro;
+}
+nav a:hover::before {
+  content:  "👣";
+}
+.active {
+  background-color: var(--fourth-color);
+}
+.active::before {
+  content:"🌴 ";
+}
+
+#menu {
+	font-size: 1.5rem;
+  border-radius: 5px;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #ccc;
+	color: black;
+ 	position: absolute;
+	top: 40px;
+	right: 14px;
+  cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "⨉";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.navigation a {
+  display: none; 
+}
+
+.open a {
+  display: block;
 }
 .action-label {
   position: absolute;
@@ -105,18 +151,7 @@ nav a {
   padding-top: .5rem;
   margin-top: 2.5rem;
 }
-nav a:hover {
-  background-color: gainsboro;
-}
-nav a:hover::before {
-  content:  "👣";
-}
-.active {
-  background-color: var(--fourth-color);
-}
-.active::before {
-  content:"🌴 ";
-}
+
 
 /*---toggle---*/
 .switch {
@@ -220,39 +255,6 @@ footer {
   font-size: 1.5rem;
 }
 
-#menu {
-	font-size: 1.5rem;
-  border-radius: 5px;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #ccc;
-	color: black;
- 	position: absolute;
-	top: 40px;
-	right: 14px;
-  cursor: pointer;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "⨉";
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.navigation a {
-  display: none; 
-}
-
-.open a {
-  display: none;
-}
 
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */
