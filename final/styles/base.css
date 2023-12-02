@@ -9,33 +9,29 @@ header {
   display: flex;
   align-items: center;
   padding: 10px;
-  width: 100%;
+  max-width: 100%;
   background-color: var(--primary-color);
   color: var(--fifth-color)
 }
-header h1 {
-    padding: 10px;
-    margin: 10px;
-    font-size: 2rem;
-}
 .logo img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 70%;
+  height: 70%;
 }
 main {
   display: grid; 
-  gap: 10px;
-  padding: 10px;
   justify-content: center;
 }
 nav {
   background-color: var(--fifth-color); 
-  color: var(--primary-color); 
+  font-size: 1.3rem;
 }
 
 nav a {
-  color: var(--primary-color); 
+  color: black; 
+  text-align: center;
   text-decoration: none;
+  padding: 0.4rem;
+  min-width: 25%;
 }
 nav a:hover {
   background-color: gainsboro;
@@ -43,14 +39,84 @@ nav a:hover {
 nav a:hover::before {
   content:  "👣";
 }
-a.active {
+nav .active {
   background-color: var(--fourth-color);
 }
-.active::before {
-  content: "🌴 ";
+nav .active::before {
+  content:"🌴 ";
 }
-
-/*---small view navigation---*/
+.action-label {
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  height: 28%;
+  width: 35%;
+}
+.action-label h3 {
+  font-size: 2rem;
+  color: black;
+}
+.action-label:hover {
+    box-shadow: 0 0 50px #bcb5b5;
+}
+.action-label button {
+  background-color: #f7ebe4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.action-label button:hover {
+  color: var(--fifth-color);
+  background-color: var(--second-color);
+}
+.card {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(0,0,0,.3);
+}
+.card h3 {
+  text-align: center;
+}
+.card p, .card a,
+.card ul, .card il,
+.card h4, .card span {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.card a:hover {
+  color: #d5d2e9;
+}
+.card a:visited:hover {
+  color: #0b07f3;
+}
+.card img{
+  width: 50%;
+}
+.card section{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+#weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#weather-forecast {
+  padding-top: .5rem;
+  margin-top: 2.5rem;
+}
 #menu {
 	font-size: 1.5rem;
   border-radius: 5px;
@@ -63,26 +129,23 @@ a.active {
 	right: 14px;
   cursor: pointer;
 }
-
 #menu::before {
 	content: "☰";
-}
+  cursor: pointer;
 
+}
 #menu.open::before {
 	content: "⨉";
+  cursor:pointer;
 }
-
 .navigation {
   display: flex;
   flex-direction: column;
   list-style: none;
 }
-
 .navigation a {
   display: none;
-  text-decoration: none;
 }
-
 .open a {
   display: block;
 }
@@ -149,22 +212,20 @@ input:checked + .slider:before {
 	position: relative;
   grid-column: 1/3;
 }
-.hero img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
+.hero img{
+  width: 100%;
 }
+
 .action-label {
 	position: absolute;
-	top: 50px;
-	left: 50px;
+	top: 30px;
+	left: 30px;
   font-size: 2rem;
   color: rgb(104, 8, 8);
 	border: 4px solid rgba(0,0,0,.75);
-	padding: 30px;
+	padding: 20px;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
-  font: var(--font3);
 	/* Buenas */
 }
 .action-label a { 
@@ -178,26 +239,7 @@ input:checked + .slider:before {
   background-color: #899a9ef5; /* Change color on hover */
   text-decoration: none;
 }
-.card {
-  border: 1px solid black; 
-  margin: 10px;
-  padding: 20px;
-}
-.card a:hover {
-  color: #d5d2e9;
-}
-  
-.card a:visited:hover {
-  color: #0b07f3;
-}
 
-.card h3 {
-  border-bottom: 1px solid #1c1b1b; 
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #1c1b1b; 
-  width: 100%;
-}
 #alert {
   display: none;
 }
@@ -213,10 +255,20 @@ footer .social {
   grid-gap: 35px;
   padding: 10px;
 }
-#lastModified {
-  font-size: 1.3rem;
-  }
+
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */
-  
+.action-label {
+  text-align: center; /* Align the button to the center */
 }
+
+.action-label h3 {
+  display: none; /* Hide the heading */
+}
+
+.action-label button {
+  display: block; /* Display the button */
+  margin: 0 auto; /* Center the button */
+}
+}
+

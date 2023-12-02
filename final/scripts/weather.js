@@ -28,7 +28,7 @@ function displayResults(data) {
     let temp = data.main.temp;
     let humidity = data.main.humidity;
 
-    tempDesc.innerHTML = `${temp.toFixed(0)}&deg;F ${desc}<br>${humidity}% humidity`;
+    tempDesc.innerHTML = `<br>${temp.toFixed(0)}&deg;F ${desc} <br>${humidity}% humidity`;
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
