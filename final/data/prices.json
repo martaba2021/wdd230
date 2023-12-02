@@ -1,105 +1,105 @@
 {
-    "Max Rental Pricing": [
+    "maxRentalPricing": [
         {
-            "Rental type":"Honda Metro Scooter",
-            "Max person":"1",
-            "Reservation":[
+            "rentalType":"Honda Metro Scooter",
+            "maxPerson":"1",
+            "reservation":[
                 {
-                "Half day (3hrs)":"$20",
-                "Full day":"$30"
+                "halfDay(3hrs)":"$20",
+                "fullDay":"$30"
                 }
             ]
         },
         {
-            "Walk-in":
+            "walkin":
             [
                 {
-                "Half Day (3hrs)":"$25",
-                "Full day":"35"
+                "halfDay(3hrs)":"$25",
+                "fullDay":"35"
                 }
             ]
         },
         {
-            "Rental type":"Honda Dio Scooter",
-            "Max person":"2",
-            "Reservation":
-            [
-                {
-                "Half day (3hrs)":"$30",
-                "Full day":"$40"
-                }
-            ]
-        },
-        {
-            "Walk-in":[
-                {
-                "Half Day (3hrs)":"$35",
-                "Full day":"45"
-                }
-            ]
-        },
-        {
-            "Rental type":"Honda PCX150 Scooter",
+            "rentalType":"Honda Dio Scooter",
             "maxPerson":"2",
-            "Reservation":[
+            "reservation":
+            [
                 {
-                "Half day (3hrs)":"$40",
-                "Full day":"$50"
+                "halfDay(3hrs)":"$30",
+                "fullDay":"$40"
+                }
+            ]
+        },
+        {
+            "walkin":[
+                {
+                "halfDay(3hrs)":"$35",
+                "fullDay":"45"
+                }
+            ]
+        },
+        {
+            "rentalType":"Honda PCX150 Scooter",
+            "maxPerson":"2",
+            "reservation":[
+                {
+                "halfDay(3hrs)":"$40",
+                "fullDay":"$50"
                 }
             ],
-            "Walk-in":[
+            "walkin":[
                 {
-                "Half Day (3hrs)":"$45",
-                "Full day":"55"
+                "halfDay(3hrs)":"$45",
+                "fullDay":"55"
                 }
             ] 
            
         },
         {
-            "Rental type":"Honda Pioneer ATV",
+            "rentalType":"Honda Pioneer ATV",
             "maxPerson":"2",
-            "Reservation":[
+            "reservation":[
                 {
-                "Half day (3hrs)":"$50",
-                "Full day":"$70"
+                "halfDay(3hrs)":"$50",
+                "fullDay":"$70"
                 }
             ],
-            "Walk-in":[
+            "walkin":[
                 {
-                "Half Day (3hrs)":"$60",
-                "Full day":"80"
+                "halfDay(3hrs)":"$60",
+                "fullDay":"80"
                 }
             ]  
         },
         {
-            "Rental type":"Jeep Wrangler - 4 door with a/c",
+            "rentalType":"Jeep Wrangler - 4 door with a/c",
             "maxPerson":"5",
-            "Reservation":[
+            "reservation":[
                 {
-                "Half day (3hrs)":"$70",
-                "Full day":"$100"
+                "halfDay(3hrs)":"$70",
+                "fullDay":"$100"
                 }
             ],
-            "Walk-in":[
+            "walkin":[
                 {
-                "Half Day (3hrs)":"$85",
-                "Full day":"125"
+                "halfDay(3hrs)":"$85",
+                "fullDay":"125"
                 }
             ] 
         },
         {
-            "Rental type":"Jeep Wrangler - 2 door",
+            "rentalType":"Jeep Wrangler - 2 door",
             "maxPerson":"4",
-            "Reservation":[
+            "reservation":[
                 {
-                "Half day (3hrs)":"$60",
-                "Full day":"$85"
+                "halfDay(3hrs)":"$60",
+                "fullDay":"$85"
                 }
             ],
-            "Walk-in":[
+            "walkin":[
                 {
-                "Half Day (3hrs)":"$70",
-                "Full day":"90"
+                "halfDay(3hrs)":"$70",
+                "fullDay":"90"
                 }
             ] 
         }

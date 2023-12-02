@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/dark-theme.css" id="dark-theme-link">
+    <link rel="stylesheet" href="styles/large.css">
+    <!--<link rel="stylesheet" href="styles/dark-theme.css" id="dark-theme-link">-->
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="theme">
@@ -51,9 +51,16 @@
     </nav>
     <main id="rentals">
         <div class="prices-menu">
-            <div class="view-buttons">
-                <button id="moreFeatures">
-                
+            <div clas             s="view-buttons">
+                <button id="gridButton">⏹️ Grid</button>
+                <button id="listButton">📄 List</button>
+            </div>
+            <div id="rental-pricing"></div>
+        </div>  
+            <div class="views-container">
+                <article class="grid-view"></article>
+            </div>
+    </main>    
     <footer>
         <p>
             &copy; <span id="copyrightYear"></span> ǀ Marta Rodriguez ǀ WDD 230 - Final Project
@@ -66,12 +73,12 @@
          </div>
     </footer>
     <script src="scripts/getdates.js"></script>
-    <script src="scripts/toggles-menu.js"></script>
-    <script src="scripts/banner.js"></script>
+    <script src="scripts/toggles-menu.js"></script> 
     <script src="scripts/weather.js"></script>
       <!--
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/banner.js"></script>
     -->
     <!--<script src="scripts/spotlight.js"></script>-->
 </body>

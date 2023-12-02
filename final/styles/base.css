@@ -255,7 +255,6 @@ footer {
   font-size: 1.5rem;
 }
 
-
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */
 .action-label {
