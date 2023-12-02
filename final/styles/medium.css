@@ -1,2 +1,13 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+#menu {
+    display: none; /* hide hamburger button */
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
 }

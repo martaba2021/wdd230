@@ -33,18 +33,6 @@ nav a {
   padding: 0.4rem;
   min-width: 25%;
 }
-nav a:hover {
-  background-color: gainsboro;
-}
-nav a:hover::before {
-  content:  "👣";
-}
-nav .active {
-  background-color: var(--fourth-color);
-}
-nav .active::before {
-  content:"🌴 ";
-}
 .action-label {
   position: absolute;
   text-align: center;
@@ -117,40 +105,20 @@ nav .active::before {
   padding-top: .5rem;
   margin-top: 2.5rem;
 }
-#menu {
-	font-size: 1.5rem;
-  border-radius: 5px;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #ccc;
-	color: black;
- 	position: absolute;
-	top: 40px;
-	right: 14px;
-  cursor: pointer;
+nav a:hover {
+  background-color: gainsboro;
 }
-#menu::before {
-	content: "☰";
-  cursor: pointer;
+nav a:hover::before {
+  content:  "👣";
+}
+.active {
+  background-color: var(--fourth-color);
+}
+.active::before {
+  content:"🌴 ";
+}
 
-}
-#menu.open::before {
-	content: "⨉";
-  cursor:pointer;
-}
-.navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.navigation a {
-  display: none;
-}
-.open a {
-  display: block;
-}
 /*---toggle---*/
-
 .switch {
   position: absolute;
   top: 10px;
@@ -239,10 +207,10 @@ input:checked + .slider:before {
   background-color: #899a9ef5; /* Change color on hover */
   text-decoration: none;
 }
-
 #alert {
   display: none;
 }
+
 footer {
   text-align: center;
   background-color: var(--primary-color);
@@ -251,9 +219,39 @@ footer {
   width: 100%;
   font-size: 1.5rem;
 }
-footer .social {
-  grid-gap: 35px;
-  padding: 10px;
+
+#menu {
+	font-size: 1.5rem;
+  border-radius: 5px;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #ccc;
+	color: black;
+ 	position: absolute;
+	top: 40px;
+	right: 14px;
+  cursor: pointer;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "⨉";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.navigation a {
+  display: none; 
+}
+
+.open a {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -270,5 +268,6 @@ footer .social {
   display: block; /* Display the button */
   margin: 0 auto; /* Center the button */
 }
+
 }
 
