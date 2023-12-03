@@ -267,12 +267,13 @@ footer {
   background-color: var(--primary-color);
   color: white;
   font-size: 1.1rem;
-  padding: auto;
 }
 .price-table td {
   padding: 8px;
   border: 1px solid #ddd;
   text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -294,6 +295,9 @@ footer {
 }
 .price-table img {
   display: none;
+}
+.price-table td {
+  font-size: 1.2rem;
 }
 }
 
