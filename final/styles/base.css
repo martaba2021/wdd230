@@ -259,17 +259,18 @@ footer {
   border-collapse: collapse;
   margin: 20px;
 }
+/*---rentals---*/
 #rentals {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 #table-head th {
   background-color: var(--primary-color);
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: auto;
 }
 .price-table td {
-  padding: 10px;
+  padding: 8px;
   border: 1px solid #ddd;
   text-align: center;
 }
@@ -288,6 +289,11 @@ footer {
   display: block; /* Display the button */
   margin: 0 auto; /* Center the button */
 }
-
+#rentals {
+  margin: 0.3rem;
+}
+.price-table img {
+  display: none;
+}
 }
 

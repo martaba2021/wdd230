@@ -10,4 +10,7 @@
     display: block;
     flex: 1 1 100%;
 }
+#rentals {
+    margin: 2rem;
+}
 }
