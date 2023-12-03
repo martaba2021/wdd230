@@ -1,55 +1,55 @@
 {
     "maxRentalPricing": [
         {
-        "image":"images/metro.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/metro.webp",
         "rentalType":"Honda Metro Scooter",
         "maxPerson":"1",
-        "reservatioHalf":"$20",
+        "reservationHalf":"$20",
         "reservationFull":"$30",
         "walkinHalf":"$25",
         "walkinFull":"$35"
     },
     {
-        "image":"images/dio.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/dio.webp",
         "rentalType":"Honda Dio Scooter",
         "maxPerson":"2",
-        "reservatioHalf":"$30",
+        "reservationHalf":"$30",
         "reservationFull":"$40",
         "walkinHalf":"$35",
         "walkinFull":"$45"
     },
     {
-        "image":"images/pcx.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/pcx.webp",
         "rentalType":"Honda PCX150 Scooter",
         "maxPerson":"2",
-        "reservatioHalf":"$40",
+        "reservationHalf":"$40",
         "reservationFull":"$50",
         "walkinHalf":"$45",
         "walkinFull":"$55"
     },
     {
-        "image":"images/atv.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/atv.webp",
         "rentalType":"Honda Pioneer ATV",
         "maxPerson":"2",
-        "reservatioHalf":"$50",
+        "reservationHalf":"$50",
         "reservationFull":"$70",
         "walkinHalf":"$60",
         "walkinFull":"$80"
     },
     {
-        "image":"images/jeep4.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/jeep4.webp",
         "rentalType":"Jeep Wrangler - 4 door with a/c",
         "maxPerson":"5",
-        "reservatioHalf":"$70",
+        "reservationHalf":"$70",
         "reservationFull":"$100",
         "walkinHalf":"$85",
         "walkinFull":"$125"
     },
     {
-        "image":"images/jeep2.webp",
+        "image":"https://martaba2021.github.io/wdd230/final/images/jeep2.webp",
         "rentalType":"Jeep Wrangler - 2 door",
         "maxPerson":"4",
-        "reservatioHalf":"$60",
+        "reservationHalf":"$60",
         "reservationFull":"$85",
         "walkinHalf":"$70",
         "walkinFull":"$90"
