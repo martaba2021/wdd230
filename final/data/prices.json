@@ -1,14 +1,16 @@
 {
     "maxRentalPricing": [
         {
+        "image":"images/metro.webp",
         "rentalType":"Honda Metro Scooter",
         "maxPerson":"1",
         "reservatioHalf":"$20",
         "reservationFull":"$30",
         "walkinHalf":"$25",
         "walkinFull":"$35"
-        },
-        {
+    },
+    {
+        "image":"images/dio.webp",
         "rentalType":"Honda Dio Scooter",
         "maxPerson":"2",
         "reservatioHalf":"$30",
@@ -17,6 +19,7 @@
         "walkinFull":"$45"
     },
     {
+        "image":"images/pcx.webp",
         "rentalType":"Honda PCX150 Scooter",
         "maxPerson":"2",
         "reservatioHalf":"$40",
@@ -25,6 +28,7 @@
         "walkinFull":"$55"
     },
     {
+        "image":"images/atv.webp",
         "rentalType":"Honda Pioneer ATV",
         "maxPerson":"2",
         "reservatioHalf":"$50",
@@ -33,6 +37,7 @@
         "walkinFull":"$80"
     },
     {
+        "image":"images/jeep4.webp",
         "rentalType":"Jeep Wrangler - 4 door with a/c",
         "maxPerson":"5",
         "reservatioHalf":"$70",
@@ -41,6 +46,7 @@
         "walkinFull":"$125"
     },
     {
+        "image":"images/jeep2.webp",
         "rentalType":"Jeep Wrangler - 2 door",
         "maxPerson":"4",
         "reservatioHalf":"$60",

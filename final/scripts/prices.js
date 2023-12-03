@@ -1,63 +1,39 @@
-const homeURL = "https://martaba2021.github.io/wdd230/final/";
 const pricesURL = "https://martaba2021.github.io/wdd230/final/data/prices.json";
-const tableContainer = document.querySelector('.price-table');
 
-async function getPrices() {
-    const response = await fetch(pricesURL);
-    const data = await response.json();
-    //console.log(data);
-
-    displayPrices(data.maxRentalPricing);
+async function fetchPrices() {
+    try {
+        const response = await fetch(pricesURL);
+        const prices = await response.json();
+        return prices.maxRentalPricing;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        throw error; // Re-throw the error to be caught by the caller
+    }
 }
-function displayPrices(rentalPrices) {
-    // Create a table element
-    const table = document.createElement('table');
-    table.classList.add('price-table');
 
-    // Add a table caption (name)
-    const caption = table.createCaption();
-    caption.textContent = 'Max Rental Pricing';
-
-    // Create the table header
-    const headerRow1 = table.insertRow();
-    const headerRow2 = table.insertRow();
-
-    const headerCell1 = headerRow1.insertCell(0);
-    const headerCell2 = headerRow1.insertCell(1);
-    const headerCell3 = headerRow1.insertCell(2);
-    const headerCell4 = headerRow1.insertCell(3);
-    const headerCell5 = headerRow2.insertCell(2);
-    const headerCell6 = headerRow2.insertCell(3);
-
-    headerCell1.textContent = 'Rental Type';
-    headerCell2.textContent = 'Max Persons';
-    headerCell3.textContent = 'Advance Reservation';
-    headerCell4.textContent = 'Walk-in';
-    headerCell5.textContent = 'Half day';
-    headerCell6.textContent = 'Full day';
-
-    rentalPrices.forEach((price) => {
-        // Create a new row for each rental type
-        const row = table.insertRow();
-
-        // Create cells for each piece of data
-        const cell1 = row.insertCell(0);
-        const cell2 = row.insertCell(1);
-        const cell3 = row.insertCell(2);
-        const cell4 = row.insertCell(3);
-        const cell5 = row.insertCell(4);
-        const cell6 = row.insertCell(5);
-
-        cell1.textContent = price.rentalType;
-        cell2.textContent = price.maxPerson;
-        cell3.textContent = `Half day: ${price.reservatioHalf}`;
-        cell4.textContent = `Full day: ${price.reservationFull}`;
-        cell5.textContent = `Half day: ${price.walkinHalf}`;
-        cell6.textContent = `Full day: ${price.walkinFull}`;
-    });
-
-    // Append the table to the container
-    tableContainer.innerHTML = ''; // Clear previous content
-    tableContainer.appendChild(table);
+async function displayPrices() {
+    try {
+        const rentalPrices = await fetchPrices();
+        let p = document.querySelector('.price-table');
+        let out = '';
+        for (let price of rentalPrices) {
+            out += `
+            <tr>
+                <td><img src='${price.image}'></td>
+                <td>${price.rentalType}</td>
+                <td>${price.maxPerson}</td>
+                <td>${price.reservationHalf}</td>
+                <td>${price.reservationFull}</td>
+                <td>${price.walkinHalf}</td>
+                <td>${price.walkinFull}</td>
+            </tr>
+            `;
+        }
+        p.innerHTML = out;
+    } catch (error) {
+        console.error('Error displaying prices:', error);
+    }
 }
-getPrices();
+
+// Call the async function
+displayPrices();
