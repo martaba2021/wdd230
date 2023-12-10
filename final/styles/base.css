@@ -305,25 +305,20 @@ button {
 button:hover {
   background-color: #45a049;
 }
-#cozumel-beach {
-  position: relative;
-  margin: 20px;
-}
+
 #services-agreements {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  
   padding: 10px; /* Adjust padding as needed */
-  width: 80%; 
   font-size: 2rem;
   border: none;
+  color: white;
+  background-image: url(https://martaba2021.github.io/wdd230/final/images/reservations.webp);
+  background-repeat: no-repeat;  
+  background-size: cover;
+  align-items: center;
 }
-#services-agreements {
-  background-image: url();
-
-  
+#services-agreement .card {
+  border-radius: 5px;
 
 }
 @media (max-width: 768px) {
@@ -357,9 +352,5 @@ button:hover {
   display: flex;
   flex-direction: column;
 }
-#services-agreements {
-  top: 50%;
-  left: 50%;
 }
 
-}
