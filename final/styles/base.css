@@ -106,6 +106,7 @@ nav a:hover::before {
   color: var(--fifth-color);
   background-color: var(--second-color);
 }
+
 .card {
   border-radius: 5px;
   display: flex;
@@ -275,9 +276,62 @@ footer {
   font-size: 1rem;
   font-weight: bold;
 }
+/*---reservations---*/
+#reservations {
+  display: flex;
+}
+form {
+  max-width: 500px;
+  margin: 20px auto; 
+}
+label {
+  margin-bottom: 8px;  
+}
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: #45a049;
+}
+#cozumel-beach {
+  position: relative;
+  margin: 20px;
+}
+#services-agreements {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px; /* Adjust padding as needed */
+  width: 80%; 
+  font-size: 2rem;
+  border: none;
+}
+#services-agreements {
+  background-image: url();
+
+  
+
+}
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */
+#home {
+  display: flex;
+  flex-direction: column;
+}
 .action-label {
   text-align: center; /* Align the button to the center */
 }
@@ -299,5 +353,13 @@ footer {
 .price-table td {
   font-size: 1.2rem;
 }
+#reservations {
+  display: flex;
+  flex-direction: column;
+}
+#services-agreements {
+  top: 50%;
+  left: 50%;
 }
 
+}
