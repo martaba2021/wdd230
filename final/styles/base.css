@@ -19,8 +19,8 @@ header {
   height: 70%;
 }
 main {
-  display: grid; 
-  justify-content: center;
+  display: grid;
+  /* justify-content: center; */
 }
 nav {
   background-color: var(--fifth-color); 
@@ -268,6 +268,7 @@ footer {
   background-color: var(--primary-color);
   color: white;
   font-size: 1.1rem;
+  padding: 5px;
 }
 .price-table td {
   padding: 8px;
@@ -279,9 +280,11 @@ footer {
 /*---reservations---*/
 #reservations {
   display: flex;
+  justify-content: space-evenly;
+
 }
 form {
-  max-width: 500px;
+  max-width: 400px;
   margin: 20px auto; 
 }
 label {
@@ -300,26 +303,30 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 2rem;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #45a048;
 }
 
 #services-agreements {
-  
-  padding: 10px; /* Adjust padding as needed */
+  padding: 10px; 
   font-size: 2rem;
+  font-weight: bold;
   border: none;
   color: white;
   background-image: url(https://martaba2021.github.io/wdd230/final/images/reservations.webp);
   background-repeat: no-repeat;  
   background-size: cover;
-  align-items: center;
 }
-#services-agreement .card {
-  border-radius: 5px;
-
+#thankyou {
+  justify-content: center;
+  text-align: center;
+}
+#thankyou p{
+  font-size: 1.5rem;
+  text-align: center;
 }
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */

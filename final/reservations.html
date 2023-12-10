@@ -36,12 +36,7 @@
         <h1 class="website-name">Scoots 🛵 Motor Scooter Rental Company</h1>    
     </header>
     <nav>
-        <button id="menu" title="menu"></button>
-        <!-- Rounded switch -->
-        <label class="switch">
-            <input type="checkbox" checked  id="mode">
-            <span class="slider round"></span>
-        </label> 
+        <button id="menu" title="menu"></button>       
             <div class="navigation">
                 <a href="https://martaba2021.github.io/wdd230/final/index.html">Home</a>
                 <a href="https://martaba2021.github.io/wdd230/final/rentals.html">Rentals</a>
@@ -72,43 +67,55 @@
                         <li>Rentals may be returned to either physical location.</li>
                     </ul>
                 </section>
-            <form action="#" method="post">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-        
-                <label for="period">Rental Period:</label>
-                <input type="text" id="period" name="period" required>
-        
-                <label for="rentalType">Rental Type:</label>
-                <select id="rentalType" name="rentalType" required>
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                    <option value="monthly">Monthly</option>
-                </select>
-        
-                <label for="number">Number of Rentals:</label>
-                <input type="number" id="number" name="number" required>
-        
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-        
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="location">Home State or Country:</label>
-                <input type="text" id="location" name="location" required>
-        
-                <label for="cruiseLine">Cruise Line (if applicable):</label>
-                <input type="text" id="cruiseLine" name="cruiseLine">
-        
-                <label for="accommodations">Special Accommodations/Comments:</label>
-                <textarea id="accommodations" name="accommodations" rows="4"></textarea>
-        
-                <button type="submit">Submit</button>
-            </form>
+                <div id="form" class="container">
+                    <form action="thankyou.html" method="get">
+                        <fieldset>
+                        <legend>Rental Information</legend>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                        <label for="period">Rental Period:</label>
+                        <input type="text" id="period" name="period" required>
+                
+                        <label for="rentalType">Rental Type:</label>
+                        <select id="rentalType" name="rentalType" required>
+                            <datalist id="rental-types">
+                            <option value="metro">Honda Metro Scooter</option>
+                            <option value="dio">Honda Dio Scooter</option>
+                            <option value="pcx">Honda Metro Scooter</option>
+                            <option value="atv">Honda Pioneer ATV</option>
+                            <option value="4door">Jeep Wrangler - 4 door with a/c</option>
+                            <option value="2door">Jeep Wrangler - 2 door</option>
+                        </datalist>
+                        </select>
+                
+                        <label for="number">Number of Rentals:</label>
+                        <input type="number" id="number" name="number" required>
+                        </fieldset>
+                        <fieldset>
+                        <legend>Renter Information</legend>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="location">Home State or Country:</label>
+                        <input type="text" id="location" name="location" required>
+                        </fieldset>
+                        <fieldset>
+                        <legend>Additional Information</legend>
+                        <label for="cruiseLine">Cruise Line (if applicable):</label>
+                        <input type="text" id="cruiseLine" name="cruiseLine">
+                
+                        <label for="accommodations">Special Accommodations/Comments:</label>
+                        <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+                        </fieldset>
+                        <button type="submit">Create Reservation</button>
+                    </form>
+                </div>
         </main>
     <footer>
         <p>
