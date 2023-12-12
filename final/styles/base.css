@@ -263,6 +263,7 @@ footer {
 /*---rentals---*/
 #rentals {
   margin: 0.5rem;
+  justify-content: center;
 }
 #table-head th {
   background-color: var(--primary-color);
@@ -329,9 +330,7 @@ button:hover {
   background-repeat: no-repeat;  
   background-size: cover;
 }
-.container {
 
-}
 .top {
   display: block;
   margin-bottom: 10px;
