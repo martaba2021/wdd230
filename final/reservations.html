@@ -45,13 +45,6 @@
             </div>    
     </nav>
     <main id="reservations">
-        <!--<div id="cozumel-beach" class="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/reservations-small.webp">
-                <source media="(max-width: 750px)" srcset="images/reservations-medium.webp">
-                <img src="images/reservations.webp" alt="picture of cozumel beachfront" width="950" height="475">
-            </picture>
-            <div>-->
                 <section id="services-agreements" class="card">
                     <h3>Rental Services and Agreements</h3>
                     <ul>
@@ -74,7 +67,7 @@
                         <label class="top">Date*
                             <input type="date" id="date" name="date" required></label>
                         <label class="top">Rental Period*
-                            <input type="text" id="period" name="period" placeholder="half day enter 0/full day start with 1 or more" required></label>    
+                            <input type="text" id="period" name="period" placeholder="Half day enter 0/full day start with 1 or more" required></label>    
                         <label class="top">Rental Type*
                         <select id="rentalType" name="rentalType" required>
                             <option value="">Please Select&#9662;</option>
@@ -110,6 +103,13 @@
                             <input type="text" id="cruiseLine" name="cruiseLine"></label>
                         <label class="top">Special Accommodations/Comments                        
                             <input type="text" id="accommodations" name="accommodations""></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Agreement</legend>
+                            <label class="sbs">I have read and agree to the rental services and agreements.
+                                <input type="checkbox" id="agreement" name="agreement" required>
+                            </label>
                         </fieldset>
                         <button type="submit">Create Reservation</button>
                     </form>

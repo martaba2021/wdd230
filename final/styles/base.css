@@ -20,7 +20,7 @@ header {
 }
 main {
   display: grid;
-  /* justify-content: center; */
+  justify-content: center; 
 }
 nav {
   background-color: var(--fifth-color); 
@@ -281,11 +281,20 @@ footer {
 #reservations {
   display: flex;
   justify-content: space-evenly;
+}
+fieldset {
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid rgba(0,0,0,.3);
+}
 
+legend {
+  font-size: 1.2rem;
+  color: var(--primary-color)
 }
 form {
-  max-width: 400px;
-  margin: 20px auto; 
+  max-width: 600px;
+  margin: 0 auto; 
 }
 label {
   margin-bottom: 8px;  
@@ -321,7 +330,7 @@ button:hover {
   background-size: cover;
 }
 .container {
-  
+
 }
 .top {
   display: block;
