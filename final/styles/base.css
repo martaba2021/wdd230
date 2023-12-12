@@ -320,6 +320,18 @@ button:hover {
   background-repeat: no-repeat;  
   background-size: cover;
 }
+.container {
+  
+}
+.top {
+  display: block;
+  margin-bottom: 10px;
+}
+#accommodations {
+  width: 100%; /* Set your desired width */
+  height: 100px; /* Set your desired height */
+  box-sizing: border-box;
+}
 #thankyou {
   justify-content: center;
   text-align: center;

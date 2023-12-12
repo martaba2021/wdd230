@@ -71,47 +71,45 @@
                     <form action="thankyou.html" method="get">
                         <fieldset>
                         <legend>Rental Information</legend>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date" name="date" required>
-                        <label for="period">Rental Period:</label>
-                        <input type="text" id="period" name="period" required>
-                
-                        <label for="rentalType">Rental Type:</label>
+                        <label class="top">Date*
+                            <input type="date" id="date" name="date" required></label>
+                        <label class="top">Rental Period*
+                            <input type="text" id="period" name="period" placeholder="half day enter 0/full day start with 1 or more" required></label>    
+                        <label class="top">Rental Type*
                         <select id="rentalType" name="rentalType" required>
-                            <datalist id="rental-types">
+                            <option value="">Please Select&#9662;</option>
                             <option value="metro">Honda Metro Scooter</option>
                             <option value="dio">Honda Dio Scooter</option>
                             <option value="pcx">Honda Metro Scooter</option>
                             <option value="atv">Honda Pioneer ATV</option>
                             <option value="4door">Jeep Wrangler - 4 door with a/c</option>
                             <option value="2door">Jeep Wrangler - 2 door</option>
-                        </datalist>
                         </select>
-                
-                        <label for="number">Number of Rentals:</label>
-                        <input type="number" id="number" name="number" required>
+                         </label>
+                        <label class="top">Number of Rentals* (Vehicles)
+                            <input type="number" id="number" name="number" placeholder="Please enter number of vehicles to rent"></label>
                         </fieldset>
+
                         <fieldset>
                         <legend>Renter Information</legend>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                
-                        <label for="location">Home State or Country:</label>
-                        <input type="text" id="location" name="location" required>
+                        <label class="top">Phone Number*
+                            <input type="tel" id="phone" name="phone" pattern="\d{6,16}" placeholder="Only numbers, no special characters" title="Please enter a valid phone number including area code" required></label>
+                        <label class="top">First Name*
+                            <input type="text" id="fname" name="fname" required></label>
+                        <label class="top">Last Name*
+                            <input type="text" id="lname" name="lname" required></label>
+                        <label class="top">Email*
+                            <input type="email" id="email" name="email" placeholder="someone@email.com" required></label>
+                        <label class="top">Home State or Country*
+                            <input type="text" id="location" name="location" required></label>
                         </fieldset>
+
                         <fieldset>
                         <legend>Additional Information</legend>
-                        <label for="cruiseLine">Cruise Line (if applicable):</label>
-                        <input type="text" id="cruiseLine" name="cruiseLine">
-                
-                        <label for="accommodations">Special Accommodations/Comments:</label>
-                        <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+                        <label class="top">Cruise Line (if applicable) 
+                            <input type="text" id="cruiseLine" name="cruiseLine"></label>
+                        <label class="top">Special Accommodations/Comments                        
+                            <input type="text" id="accommodations" name="accommodations""></label>
                         </fieldset>
                         <button type="submit">Create Reservation</button>
                     </form>
