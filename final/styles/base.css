@@ -93,7 +93,7 @@ nav a:hover::before {
 .action-label:hover {
     box-shadow: 0 0 50px #bcb5b5;
 }
-.action-label button {
+.reservation-link button {
   background-color: #f7ebe4;
   font-size: 1.5rem;
   font-weight: bold;
@@ -102,7 +102,7 @@ nav a:hover::before {
   border-radius: 5px;
   padding: 1rem;
 }
-.action-label button:hover {
+.reservation-link button:hover {
   color: var(--fifth-color);
   background-color: var(--second-color);
 }
@@ -154,24 +154,21 @@ nav a:hover::before {
 }
 
 .high-temp-message {
-  background-color: red;
+  background-color: #6f2a31;
   color: white;
   padding: 15px;
   font-size: 3rem;
   text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
+  position: relative;
 }
-
 .close-button {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   cursor: pointer;
-  font-size: 20px;
+  padding: 5px;
+  size: 2rem;
 }
-
 
 /*---toggle---*/
 .switch {
@@ -381,7 +378,7 @@ button:hover {
   display: none; /* Hide the heading */
 }
 
-.action-label button {
+.reservation-link button {
   display: block; /* Display the button */
   margin: 0 auto; /* Center the button */
 }
@@ -397,6 +394,9 @@ button:hover {
 #reservations {
   display: flex;
   flex-direction: column;
+}
+.high-temp-message {
+  display: none;
 }
 }
 
