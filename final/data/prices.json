@@ -30,7 +30,7 @@
     {
         "image":"https://martaba2021.github.io/wdd230/final/images/atv.webp",
         "rentalType":"Honda Pioneer ATV",
-        "maxPerson":"2",
+        "maxPerson":"4",
         "reservationHalf":"$50",
         "reservationFull":"$70",
         "walkinHalf":"$60",
