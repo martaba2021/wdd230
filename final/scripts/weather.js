@@ -24,15 +24,17 @@ async function apiFetchCurrent() {
 apiFetchCurrent();
 
 function displayResults(data) {
+    let title = data.weather[0].main;
     let desc = data.weather[0].description;
+    let icon = data.weather[0].icon;
     let temp = data.main.temp;
     let humidity = data.main.humidity;
 
-    tempDesc.innerHTML = `<br>${temp.toFixed(0)}&deg;F ${desc} <br>${humidity}% humidity`;
+    tempDesc.innerHTML = `<h3>${title}</h3><br>${temp.toFixed(0)}&deg;F ${desc} <br>${humidity}% humidity`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', `weather icon - ${data.weather[0].icon}`);
+    weatherIcon.setAttribute('alt', `weather icon - ${icon}`);
 }
 
 async function apiFetchForecast(callback) {
@@ -107,4 +109,3 @@ function displayHighTempMessage(data) {
     // Insert the message at the top of the page
     document.body.insertBefore(highTempMessage, document.body.firstChild);
 }
-
