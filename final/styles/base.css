@@ -93,20 +93,9 @@ nav a:hover::before {
 .action-label:hover {
     box-shadow: 0 0 50px #bcb5b5;
 }
-.reservation-link button {
-  background-color: #f7ebe4;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 1rem;
+.action-label:hover::before {
+  content:  "👇";
 }
-.reservation-link button:hover {
-  color: var(--fifth-color);
-  background-color: var(--second-color);
-}
-
 .card {
   border-radius: 5px;
   display: flex;
@@ -411,7 +400,6 @@ button:hover {
 main.contact {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; 
-  grid: 20px;
 }
 .locations {
   grid-column: span 1;
