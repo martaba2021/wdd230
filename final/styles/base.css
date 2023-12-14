@@ -246,15 +246,6 @@ input:checked + .slider:before {
   margin: 5px;
   top: 50%;
   bottom: 50%;
-  font-size: 45px;
-  color: var(--primary-color);
-}
-.action-label h1 a:hover {
-  background-color: #899a9ef5; /* Change color on hover */
-  text-decoration: none;
-}
-#alert {
-  display: none;
 }
 
 footer {
