@@ -20,7 +20,6 @@ header {
 }
 main {
   display: grid;
-  /* justify-content: center; */
 }
 nav {
   background-color: var(--fifth-color); 
@@ -31,7 +30,6 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 0.4rem;
-  /*min-width: 25%;*/
 }
 nav a:hover {
   background-color: gainsboro;
