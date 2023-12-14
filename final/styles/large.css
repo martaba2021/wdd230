@@ -13,4 +13,10 @@
 #rentals {
     margin: 2rem;
 }
+form label.sbs {
+    padding: .4rem 0;
+}
+.container label.top input, .container label.top textarea{
+    max-width: 70%;
+}
 }

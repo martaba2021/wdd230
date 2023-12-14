@@ -13,4 +13,12 @@
 form label.sbs {
     padding: .4rem 0;
 }
+main.contact {
+    grid-template-columns: 1fr; 
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.map {
+    grid-column: span 1;
+}
 }

@@ -20,7 +20,7 @@ header {
 }
 main {
   display: grid;
-  justify-content: center; 
+  /* justify-content: center; */
 }
 nav {
   background-color: var(--fifth-color); 
@@ -407,6 +407,48 @@ button:hover {
   font-size: 1.5rem;
   text-align: center;
 }
+/*--- contact ---*/
+main.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid: 20px;
+}
+.locations {
+  grid-column: span 1;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.container {
+  grid-column: span 1;
+  max-width: 80%;
+}
+.container label.top input, .container label.top textarea{
+  max-width: fit-content;
+}
+.map {
+  grid-column: span 1; 
+  text-align: center;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.locations h3 {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin: 0 1rem;
+  padding: 0.5rem .5rem;
+}
+.locations h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+.locations p, .locations a {
+  font-size: 1rem;
+}
+.locations a{
+  padding: .5rem;
+}
 @media (max-width: 768px) {
     /* For mobile, switch to a single-column layout */
 #home {
@@ -440,6 +482,12 @@ button:hover {
 }
 .high-temp-message {
   display: none;
+}
+main.contact {
+  grid-template-columns: 1fr; 
+}
+.map {
+  grid-column: span 1; 
 }
 }
 

@@ -12,14 +12,6 @@ function validateForm() {
         isValid = false;
     }
 
-    var rentalsInput = document.getElementById('number');
-    var numRentals = parseInt(rentalsInput.value);
-
-    if (numRentals < 1) {
-        document.getElementById('number-error').textContent = 'Number of rentals cannot be negative or 0.';
-        isValid = false;
-    }
-
     var agreementCheckbox = document.getElementById('agreement');
     if (!agreementCheckbox.checked) {
         document.getElementById('agreement-error').textContent = 'Please agree to the rental services and agreements.';
@@ -31,5 +23,3 @@ function validateForm() {
     }
     return true;
 }
-
-

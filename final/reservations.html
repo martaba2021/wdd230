@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
 </head>
-<body class="theme">
+<body>
     <header>
         <div id="logo" class="logo">
             <picture>
@@ -59,7 +59,7 @@
                         <li>Rentals may be returned to either physical location.</li>
                     </ul>
                 </section>
-                <div id="form" class="container">
+                <div id="form" class="reservations-container">
                     <form action="thankyou.html" method="get" onsubmit="return validateForm()">
                         <fieldset>
                         <legend>Rental Information</legend>
@@ -80,7 +80,6 @@
                         </select>
                          </label>
                         <label class="top">Number of Rentals* (Vehicles)
-                            <span id="number-error" class="error"></span>
                             <input type="number" id="number" name="number" placeholder="Please enter number of vehicles to rent" min="1"></label>
                         </fieldset>
 

@@ -43,13 +43,40 @@
                 <a href="https://martaba2021.github.io/wdd230/final/contact.html" class="active">Contact Us</a>
             </div>    
     </nav>
-    <main>
-       
+    <main class="contact">
+        <section id="locations" class="locations">
+            <h3>Locations</h3>
+            <p>For your convenience, we have two locations:</p>
+            <h4>Centro de Cozumel</h4>
+            <p>Near the Playa del Carmen-Cozumel Ferry dock in el 
+                Centro de Cozumel. </p>
+            <p>Address: Calle 2 Nte 100, Centro, 77600 Cozumel, Q.R., Mexico</p>
+            <a href="https://maps.app.goo.gl/JpPQU9HyFHoGcZaN7">Directions ➡️</a>
+            <h4>Terminal Puerto Maya</h4>
+            <p>Near the Terminal Puerta 
+            Maya further south along the coast which caters to the cruise lines and patrons.</p>
+            <p>Address: Cozumel Cruise Terminal, Costera Sur, 77600 Cozumel, QROO, Mexico</p>
+            <a href="https://www.google.com/maps/search/Cozumel+Cruise+Terminal,+Costera+Sur,+77600+Cozumel,+QROO,+Mexico%3C/@20.492253">Directions ➡️</a>
+        </section>
+        <div id="form" class="container">
+            <form action="response.html">
+                <fieldset>
+                    <legend>Contact Us Today</legend>
+                    <label class="top">Name*
+                        <input type="text" id="name" name="name" required></label>
+                    <label class="top">Email*
+                        <input type="email" id="email" name="email" placeholder="someone@email.com" required></label>
+                        <label class="top">Comments/Questions                        
+                        <textarea id="comments" name="comments" placeholder="E.g. reason for contacting us." rows="4" cols="50" required></textarea></label>
+                </fieldset>
+                <button type="submit" value="Sent message" class="submitBtn">Send Message</button>
+            </form>
+        </div>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1eESfFaQhl1AlTOVPDF9b2kJyhqQiR6g&ehbc=2E312F&noprof=1" width="640" height="480"></iframe> 
+        </section>
         </main>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.1722627543!2d-87.03907282055594!3d20.43232776874134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1701142834973!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-    <footer>
+        <footer>
         <p>
             &copy; <span id="copyrightYear"></span> ǀ Marta Rodriguez ǀ WDD 230 - Final Project
         </p>
@@ -59,10 +86,9 @@
            <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="google icon"></a>
            <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram icon"></a>
          </div>
-    </footer>
+            </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/toggles-menu.js"></script>
     <script src="scripts/banner.js"></script>
-    <script src="scripts/weather.js"></script>
 </body>
 </html>
