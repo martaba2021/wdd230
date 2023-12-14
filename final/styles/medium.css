@@ -10,9 +10,15 @@
     display: block;
     flex: 1 1 100%;
 }
+.action-label {
+    text-align: center; 
+}
 form label.sbs {
     padding: .4rem 0;
 }
+form label.top input, form label.top textarea, form label.top select{
+    width: fit-content;
+  }
 main.contact {
     grid-template-columns: 1fr; 
     margin: 0.5rem;

@@ -442,13 +442,11 @@ main.contact {
   flex-direction: column;
 }
 .action-label {
-  text-align: center; /* Align the button to the center */
+  display: none; 
 }
-
-.action-label h3 {
-  display: none; /* Hide the heading */
+.action-label:hover::before {
+  display: none;
 }
-
 .reservation-link button {
   display: block; /* Display the button */
   margin: 0 auto; /* Center the button */
@@ -474,6 +472,9 @@ main.contact {
 }
 .map {
   grid-column: span 1; 
+}
+form label.top input, form label.top textarea, form label.top select{
+  width: fit-content;
 }
 }
 
