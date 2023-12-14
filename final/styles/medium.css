@@ -10,4 +10,7 @@
     display: block;
     flex: 1 1 100%;
 }
+form label.sbs {
+    padding: .4rem 0;
+}
 }

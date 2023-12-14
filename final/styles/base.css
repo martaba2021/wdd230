@@ -175,7 +175,6 @@ nav a:hover::before {
   right: 0;
   cursor: pointer;
   padding: 5px;
-  size: 2rem;
 }
 
 /*---toggle---*/
@@ -317,31 +316,67 @@ legend {
   font-size: 1.2rem;
   color: var(--primary-color)
 }
-form {
-  max-width: 600px;
-  margin: 0 auto; 
+/*--- form ---*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #094074;
+  border-radius: 5px;
+  padding: .5rem 2%;
 }
-label {
-  margin-bottom: 8px;  
+form legend {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  padding: 0 .5rem;
 }
-input, select, textarea {
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+form label.top input, form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 5px;
+  padding: .75rem;
+  color: #555;
   width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,.1);
 }
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
+form label.sbs input {
+  padding: .75rem 0;
+  color: #555;
+}
+.error {
+  color: red;
+}
+
+form .submitBtn {
+  background-color: var(--primary-color);
+  color: var(--fourth-color);
+  padding: .75rem 1.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 2rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
 }
-
+form label.top input:required {
+  border-left: red solid 4px;
+}
+form label.top input:required:valid {
+  border-left: green solid 4px;
+}
 button:hover {
-  background-color: #45a048;
+  background-color: var(--second-color);
 }
 
 #services-agreements {

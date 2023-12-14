@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/dark-theme.css" id="dark-theme-link">
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="theme">
@@ -61,10 +60,11 @@
                     </ul>
                 </section>
                 <div id="form" class="container">
-                    <form action="thankyou.html" method="get">
+                    <form action="thankyou.html" method="get" onsubmit="return validateForm()">
                         <fieldset>
                         <legend>Rental Information</legend>
                         <label class="top">Date*
+                            <span id="date-error" class="error"></span>
                             <input type="date" id="date" name="date" required></label>
                         <label class="top">Rental Period*
                             <input type="text" id="period" name="period" placeholder="Half day enter 0/full day start with 1 or more" required></label>    
@@ -80,7 +80,8 @@
                         </select>
                          </label>
                         <label class="top">Number of Rentals* (Vehicles)
-                            <input type="number" id="number" name="number" placeholder="Please enter number of vehicles to rent"></label>
+                            <span id="number-error" class="error"></span>
+                            <input type="number" id="number" name="number" placeholder="Please enter number of vehicles to rent" min="1"></label>
                         </fieldset>
 
                         <fieldset>
@@ -107,11 +108,12 @@
 
                         <fieldset>
                             <legend>Agreement</legend>
-                            <label class="sbs">I have read and agree to the rental services and agreements.
-                                <input type="checkbox" id="agreement" name="agreement" required>
+                            <label class="sbs"><input type="checkbox" id="agreement" name="agreement" required>
+                                Check if you read and agree to the rental services and agreements.
                             </label>
+                            <span id="agreement-error" class="error"></span>
                         </fieldset>
-                        <button type="submit">Create Reservation</button>
+                        <button type="submit" value="Create My Reservation" class="submitBtn">Create Reservation</button>
                     </form>
                 </div>
         </main>
@@ -128,5 +130,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/toggles-menu.js"></script>
+    <script src="scripts/validate-form.js"></script>
 </body>
 </html>
